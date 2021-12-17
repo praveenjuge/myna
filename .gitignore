@@ -1,0 +1,8 @@
+public/
+resources/
+node_modules/
+
+.DS_Store
+static/main.css
+.hugo_build.lock
+package-lock.json

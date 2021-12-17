@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Myna UI</title>
+  <link rel="stylesheet" href="/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" cross-origin="true" />
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400..800&display=swap" rel="stylesheet" />
+  <script defer src="https://unpkg.com/alpinejs/dist/cdn.min.js"></script>
+</head>
+
+<body class="font-sans antialiased">
+  {{ partial "header" . }}
+  <main class='{{ if .IsHome }}{{ else }}p-4 mx-auto max-w-7xl{{ end }}'>
+    {{ block "main" . }}{{ end }}
+  </main>
+</body>
+
+</html>
