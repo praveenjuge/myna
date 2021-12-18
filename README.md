@@ -4,7 +4,11 @@ Perfect UI components and templates. Made with TailwindCSS. Open Source. Fully r
 
 ## Bugs & Suggestions
 
-Found a bug? [Please open a new issue](https://github.com/praveenjuge/myna/issues/new). Use [GitHub Discussions](https://github.com/praveenjuge/myna/discussions) for new feature requests.
+Found a bug? [Please open a issue](https://github.com/praveenjuge/myna/issues/new/choose).
+
+Have a component suggestion? [Reqeust a new component](https://github.com/praveenjuge/myna/issues/new/choose).
+
+Use [Discussions](https://github.com/praveenjuge/myna/discussions) for new general discussions.
 
 ## Development
 
