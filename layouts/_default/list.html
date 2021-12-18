@@ -1,10 +1,8 @@
 {{ define "main" }}
 
-<article>
-  <h1 class="mb-6 text-3xl font-bold tracking-tight font-alegreya">{{ .Title }}</h1>
-  {{ range .Pages.ByWeight }}
-  {{ partial "code" . }}
-  {{ end }}
-</article>
+<h1 class="mb-8 text-3xl font-bold tracking-tight font-alegreya">{{ .Title | humanize | title }}</h1>
+{{ range .Pages.ByWeight }}
+{{ partial "code" . }}
+{{ end }}
 
 {{end}}

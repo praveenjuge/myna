@@ -10,6 +10,6 @@
     "@tailwindcss/typography": "^0.5.0",
     "concurrently": "^6.5.0",
     "cross-env": "^7.0.3",
-    "tailwindcss": "^3.0.6"
+    "tailwindcss": "^3.0.7"
   }
 }

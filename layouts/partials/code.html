@@ -1,5 +1,5 @@
-<div class="mb-10" x-data="{ open: false }">
-  <div class="flex items-center justify-between mb-1.5">
+<div class="mb-12" x-data="{ open: false }">
+  <div class="flex items-center justify-between mb-1">
     <p class="font-medium text-gray-800 font-alegreya">{{ .File.TranslationBaseName | humanize | title }}</p>
     <div class="flex space-x-0.5">
       <button class="p-1 text-xs font-medium rounded appearance-none select-none" x-on:click="open = ! open"
@@ -19,7 +19,6 @@
   <div class="w-full border rounded {{ .Params.wrapper }}" x-show="!open">
     {{ .Content }}
   </div>
-
   <div class="relative prose prose-pre:max-h-[20rem] max-w-none prose-pre:my-0" x-show="open" x-cloak>
     {{ highlight .Content "html" "style=dracula" }}
   </div>
