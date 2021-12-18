@@ -6,7 +6,7 @@ Perfect UI components and templates. Made with TailwindCSS. Open Source. Fully r
 
 Found a bug? [Please open a issue](https://github.com/praveenjuge/myna/issues/new/choose).
 
-Have a component suggestion? [Reqeust a new component](https://github.com/praveenjuge/myna/issues/new/choose).
+Have a component suggestion? [Request a new component](https://github.com/praveenjuge/myna/issues/new/choose).
 
 Use [Discussions](https://github.com/praveenjuge/myna/discussions) for new general discussions.
 
