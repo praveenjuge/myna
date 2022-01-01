@@ -2,7 +2,7 @@
 ---
 
 <section class="bg-gradient-to-b from-gray-200 to-white">
-  <div class="px-4 pt-6 pb-10 mx-auto space-y-5 max-w-7xl">
+  <div class="px-4 pt-6 pb-10 mx-auto space-y-5 max-w-[85rem]">
     <div class="flex space-x-3">
       <div class="flex flex-shrink-0 w-8 h-8 bg-gray-200 rounded-full">
         <img src="https://source.boringavatars.com/beam/you" class="bg-gray-200 rounded-full select-none" height="32"
@@ -24,10 +24,11 @@
   </div>
 </section>
 
-<section class="p-4 mx-auto max-w-7xl">
-  <div class="grid grid-cols-2 gap-4 mx-auto md:grid-cols-5">
+<section class="p-4 mx-auto max-w-[85rem]">
+  <p class="mb-2 italic font-medium text-gray-600 font-alegreya">Elements</p>
+  <div class="grid grid-cols-1 gap-4 mx-auto mb-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
     {{< elementlink title="Avatar" link="/avatar">}}
-      <div class="w-8 h-8 transition bg-gray-300 border border-gray-300 rounded-full group-hover:border-gray-400"></div>
+      <div class="w-8 h-8 transition bg-gray-200 border border-gray-200 rounded-full group-hover:border-gray-300"></div>
       {{< /elementlink>}}
         {{< elementlink title="Avatar Group" link="/avatar-group">}}
           <div class="flex -space-x-4">
@@ -41,37 +42,52 @@
           {{< /elementlink>}}
             {{< elementlink title="Badge" link="/badge">}}
               <div
-                class="transition bg-gray-300 border border-gray-300 rounded-full w-14 h-7 group-hover:border-gray-400">
+                class="transition bg-gray-200 border border-gray-200 rounded-full w-14 h-7 group-hover:border-gray-300">
               </div>
               {{< /elementlink>}}
                 {{< elementlink title="Button" link="/buttons">}}
                   <div
-                    class="w-16 h-8 transition bg-gray-300 border border-gray-300 rounded group-hover:border-gray-400">
+                    class="w-16 h-8 transition bg-gray-200 border border-gray-200 rounded group-hover:border-gray-300">
                   </div>
                   {{< /elementlink>}}
-                    <a href="https://github.com/praveenjuge/myna/issues/new/choose" target="_blank" rel="noreferrer"
-                      class="flex flex-col h-32 font-semibold text-gray-900 transition border border-gray-200 border-dashed divide-y divide-gray-200 rounded divide-dashed group hover:border-gray-300 focus-within:outline-none focus-within:ring-2 focus-within:ring-gray-300 focus-within:border-gray-300 hover:divide-gray-300">
-                      <div aria-hidden="true" class="flex items-center justify-center flex-1 select-none">
-                        <svg class="w-4 h-4 text-gray-300 transition group-hover:text-gray-400"
-                          xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="currentColor"
-                          viewBox="0 0 256 256">
-                          <line x1="40" y1="128" x2="216" y2="128" fill="none" stroke="currentColor"
-                            stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></line>
-                          <line x1="128" y1="40" x2="128" y2="216" fill="none" stroke="currentColor"
-                            stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></line>
-                        </svg>
-                      </div>
-                      <div class="flex items-center justify-between px-3 py-2">
-                        <span class="truncate font-alegreya">Request Something New</span>
-                        <svg aria-hidden="true" viewBox="0 0 16 16"
-                          class="h-4 w-4 flex flex-shrink-0 transition text-gray-400 group-hover:translate-x-0.5">
-                          <path fill="currentColor"
-                            d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z">
-                          </path>
-                          <path d="M1.75 8H11" stroke-width="1.5" stroke="currentColor" stroke-linecap="round"
-                            class="stroke-array-10 group-hover:stroke-array-20"></path>
-                        </svg>
-                      </div>
-                    </a>
+                    {{< elementlink title="Spinner" link="/spinner">}}
+                      <svg class="w-8 h-8" viewBox="3 3 18 18">
+                        <path class="transition fill-gray-200 group-hover:fill-gray-300"
+                          d="M12 5C8.13401 5 5 8.13401 5 12C5 15.866 8.13401 19 12 19C15.866 19 19 15.866 19 12C19 8.13401 15.866 5 12 5ZM3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12Z">
+                        </path>
+                        <path class="transition fill-gray-300 group-hover:fill-gray-400"
+                          d="M16.9497 7.05015C14.2161 4.31648 9.78392 4.31648 7.05025 7.05015C6.65973 7.44067 6.02656 7.44067 5.63604 7.05015C5.24551 6.65962 5.24551 6.02646 5.63604 5.63593C9.15076 2.12121 14.8492 2.12121 18.364 5.63593C18.7545 6.02646 18.7545 6.65962 18.364 7.05015C17.9734 7.44067 17.3403 7.44067 16.9497 7.05015Z">
+                        </path>
+                      </svg>
+                      {{< /elementlink>}}
+  </div>
+  <p class="mb-2 italic font-medium text-gray-600 font-alegreya">Marketing</p>
+  <div class="grid grid-cols-1 gap-4 mx-auto mb-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+    {{< elementlink title="Header" link="/header">}}
+      <div class="flex items-center justify-between w-full px-4">
+        <div class="w-6 h-3 transition bg-gray-200 border border-gray-200 rounded group-hover:border-gray-300">
+        </div>
+        <div class="flex space-x-1">
+          <div class="w-8 h-3 transition bg-gray-100 border border-gray-100 rounded group-hover:border-gray-200">
+          </div>
+          <div class="w-8 h-3 transition bg-gray-200 border border-gray-200 rounded group-hover:border-gray-300">
+          </div>
+        </div>
+      </div>
+      {{< /elementlink>}}
+        {{< elementlink title="Footer" link="/footer">}}
+          <div class="flex space-x-2">
+            <div class="w-8 h-2.5 transition bg-gray-200 border border-gray-200 rounded-sm group-hover:border-gray-300">
+            </div>
+            <div class="w-8 h-10 transition bg-gray-200 border border-gray-200 rounded group-hover:border-gray-300">
+            </div>
+            <div class="w-8 h-10 transition bg-gray-200 border border-gray-200 rounded group-hover:border-gray-300">
+            </div>
+            <div class="w-8 h-10 transition bg-gray-200 border border-gray-200 rounded group-hover:border-gray-300">
+            </div>
+            <div class="w-8 h-10 transition bg-gray-200 border border-gray-200 rounded group-hover:border-gray-300">
+            </div>
+          </div>
+          {{< /elementlink>}}
   </div>
 </section>

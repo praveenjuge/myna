@@ -1,10 +1,16 @@
-<a {{ if .Get "link" }} href={{ .Get "link" }} {{ end }}
-  class="flex flex-col overflow-hidden font-semibold text-gray-800 transition border border-gray-100 divide-y divide-gray-100 rounded h-36 group hover:border-gray-200 focus-within:outline-none focus-within:ring-2 focus-within:ring-gray-200 focus-within:border-gray-200 hover:divide-gray-200">
+<a href="https://github.com/praveenjuge/myna/issues/new/choose" target="_blank" rel="noreferrer"
+  class="flex flex-col font-semibold text-gray-900 transition border border-gray-200 border-dashed divide-y divide-gray-200 rounded h-36 divide-dashed group hover:border-gray-300 focus-within:outline-none focus-within:ring-2 focus-within:ring-gray-300 focus-within:border-gray-300 hover:divide-gray-300">
   <div aria-hidden="true" class="flex items-center justify-center flex-1 select-none">
-    {{ .Inner | safeHTML }}
+    <svg aria-hidden="true" class="w-4 h-4 text-gray-300 transition group-hover:text-gray-400"
+      xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="currentColor" viewBox="0 0 256 256">
+      <line x1="40" y1="128" x2="216" y2="128" fill="none" stroke="currentColor" stroke-linecap="round"
+        stroke-linejoin="round" stroke-width="24"></line>
+      <line x1="128" y1="40" x2="128" y2="216" fill="none" stroke="currentColor" stroke-linecap="round"
+        stroke-linejoin="round" stroke-width="24"></line>
+    </svg>
   </div>
   <div class="flex items-center justify-between px-3 py-2">
-    <span class="truncate font-alegreya">{{ if .Get "title" }}{{ .Get "title" }}{{ end }}</span>
+    <span class="truncate font-alegreya">Request Something New</span>
     <svg aria-hidden="true" viewBox="0 0 16 16"
       class="h-4 w-4 flex flex-shrink-0 transition text-gray-400 group-hover:translate-x-0.5">
       <path fill="currentColor"

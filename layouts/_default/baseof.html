@@ -11,15 +11,21 @@
   <link rel="stylesheet" href="/main.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" cross-origin="true" />
-  <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400..800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..800;1,400..800&display=swap"
+    rel="stylesheet" />
   <script defer src="https://unpkg.com/alpinejs/dist/cdn.min.js"></script>
 </head>
 
 <body class="font-sans antialiased">
+  {{ if .IsPage }}
+  {{ block "main" . }}{{ end }}
+  {{ else }}
   {{ partial "header" . }}
-  <main class='{{ if .IsHome }}{{ else }}p-4 mx-auto max-w-7xl{{ end }}'>
+  <main class='{{ if .IsHome }}{{ else }}p-4 mx-auto max-w-[85rem]{{ end }}'>
     {{ block "main" . }}{{ end }}
   </main>
+  {{ partial "footer" . }}
+  {{ end }}
 </body>
 
 </html>
