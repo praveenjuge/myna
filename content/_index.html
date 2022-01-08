@@ -24,13 +24,13 @@
   </div>
 </section>
 
-<section class="p-4 mx-auto max-w-[85rem]">
-  <p class="mb-2 italic font-medium text-gray-600 font-alegreya">Elements</p>
+<section class="p-4 mx-auto max-w-[85rem] font-alegreya">
+  <p class="mb-2 italic font-medium text-gray-600">Elements</p>
   <div class="grid grid-cols-1 gap-4 mx-auto mb-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
-    {{< elementlink title="Avatar" link="/avatar">}}
+    {{< elementlink link="/avatar">}}
       <div class="w-8 h-8 transition bg-gray-200 border border-gray-200 rounded-full group-hover:border-gray-300"></div>
       {{< /elementlink>}}
-        {{< elementlink title="Avatar Group" link="/avatar-group">}}
+        {{< elementlink link="/avatar-group">}}
           <div class="flex -space-x-4">
             <div class="w-8 h-8 transition bg-gray-100 border border-gray-100 rounded-full group-hover:border-gray-200">
             </div>
@@ -40,17 +40,17 @@
             </div>
           </div>
           {{< /elementlink>}}
-            {{< elementlink title="Badge" link="/badge">}}
+            {{< elementlink link="/badge">}}
               <div
                 class="transition bg-gray-200 border border-gray-200 rounded-full w-14 h-7 group-hover:border-gray-300">
               </div>
               {{< /elementlink>}}
-                {{< elementlink title="Button" link="/buttons">}}
+                {{< elementlink link="/buttons">}}
                   <div
                     class="w-16 h-8 transition bg-gray-200 border border-gray-200 rounded group-hover:border-gray-300">
                   </div>
                   {{< /elementlink>}}
-                    {{< elementlink title="Button Group" link="/button-group">}}
+                    {{< elementlink link="/button-group">}}
                       <div
                         class="w-8 h-8 transition border border-gray-100 rounded-l bg-gray-50 group-hover:border-gray-300">
                       </div>
@@ -61,9 +61,9 @@
                         class="w-8 h-8 -ml-px transition bg-gray-200 border border-gray-300 rounded-r group-hover:border-gray-300">
                       </div>
                       {{< /elementlink>}}
-                        {{< elementlink title="Spinner" link="/spinner">}}
+                        {{< elementlink link="/spinner">}}
                           <svg class="w-8 h-8" viewBox="3 3 18 18">
-                            <path class="transition fill-gray-200 group-hover:fill-gray-300"
+                            <path class="transition fill-gray-100 group-hover:fill-gray-200"
                               d="M12 5C8.13401 5 5 8.13401 5 12C5 15.866 8.13401 19 12 19C15.866 19 19 15.866 19 12C19 8.13401 15.866 5 12 5ZM3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12Z">
                             </path>
                             <path class="transition fill-gray-300 group-hover:fill-gray-400"
@@ -71,7 +71,7 @@
                             </path>
                           </svg>
                           {{< /elementlink>}}
-                            {{< elementlink title="Switch" link="/switch">}}
+                            {{< elementlink link="/switch">}}
                               <div
                                 class="flex items-center w-12 py-1 px-0.5 transition bg-gray-200 border border-gray-200 rounded-full h-7 group-hover:border-gray-300">
                                 <div
@@ -80,9 +80,37 @@
                               </div>
                               {{< /elementlink>}}
   </div>
-  <p class="mb-2 italic font-medium text-gray-600 font-alegreya">Marketing</p>
+  <p class="mb-2 italic font-medium text-gray-600">Form</p>
   <div class="grid grid-cols-1 gap-4 mx-auto mb-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
-    {{< elementlink title="Header" link="/header">}}
+    {{< elementlink link="/input">}}
+      <div class="w-1/2 h-6 transition bg-gray-100 border border-gray-200 rounded group-hover:border-gray-300">
+      </div>
+      {{< /elementlink>}}
+        {{< elementlink link="/radio">}}
+          <div
+            class="grid w-8 h-8 transition bg-gray-200 border border-gray-200 rounded-full group-hover:border-gray-300 place-items-center">
+            <div class="w-3 h-3 transition bg-white border border-gray-200 rounded-full group-hover:border-gray-300">
+            </div>
+          </div>
+          {{< /elementlink>}}
+            {{< elementlink link="/select">}}
+              <div
+                class="grid w-1/2 h-6 px-1.5 items-center transition bg-gray-100 border border-gray-200 rounded place-items-end group-hover:border-gray-300">
+                <svg class="w-2.5 h-2.5 stroke-gray-400 fill-transparent" viewBox="0 0 256 256">
+                  <polyline points="208 96 128 176 48 96" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="36"></polyline>
+                </svg>
+              </div>
+              {{< /elementlink>}}
+                {{< elementlink link="/textarea">}}
+                  <div
+                    class="w-1/2 h-12 transition bg-gray-100 border border-gray-200 rounded group-hover:border-gray-300">
+                  </div>
+                  {{< /elementlink>}}
+  </div>
+  <p class="mb-2 italic font-medium text-gray-600">Marketing</p>
+  <div class="grid grid-cols-1 gap-4 mx-auto mb-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+    {{< elementlink link="/header">}}
       <div class="flex items-center justify-between w-full px-4">
         <div class="w-6 h-3 transition bg-gray-200 border border-gray-200 rounded group-hover:border-gray-300">
         </div>
@@ -94,7 +122,7 @@
         </div>
       </div>
       {{< /elementlink>}}
-        {{< elementlink title="Footer" link="/footer">}}
+        {{< elementlink link="/footer">}}
           <div class="flex space-x-2">
             <div class="w-8 h-2.5 transition bg-gray-200 border border-gray-200 rounded-sm group-hover:border-gray-300">
             </div>
