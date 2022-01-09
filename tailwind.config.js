@@ -15,13 +15,9 @@ module.exports = {
     require("@tailwindcss/forms"),
     plugin(function ({ addBase }) {
       addBase({
-        ".stroke-array-10": {
-          "stroke-dasharray": "10",
-          "stroke-dashoffset": "10",
-          transition: "stroke-dashoffset .2s",
-        },
         ".stroke-array-20": {
           "stroke-dashoffset": "20",
+          transition: "stroke-dashoffset .2s",
         },
         "[x-cloak]": {
           display: "none !important",

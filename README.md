@@ -38,4 +38,4 @@ Open [`http://localhost:1313`](http://localhost:1313) in your browser.
 
 ## License
 
-See the [LICENSE](https://github.com/praveenjuge/myna/blob/master/LICENSE) file.
+See the [LICENSE](https://github.com/praveenjuge/myna/blob/main/LICENSE) file.

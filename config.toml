@@ -1,4 +1,13 @@
 languageCode = 'en-us'
+title = "Myna UI"
+
 disableKinds = ["taxonomy", "taxonomyTerm"]
 enableGitInfo = true
 enableRobotsTXT = true
+
+[params]
+  description = "Perfect UI Components and Templates. Made with TailwindCSS. Open Source. Fully Responsive and Accessible. Free."
+  author = "Praveen Juge"
+  github = "https://github.com/praveenjuge/myna"
+  og_image = "/og.png"
+  twitter = "@praveenjuge"
