@@ -1,3 +1,4 @@
 languageCode = 'en-us'
 disableKinds = ["taxonomy", "taxonomyTerm"]
 enableGitInfo = true
+enableRobotsTXT = true
