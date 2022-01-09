@@ -1,5 +1,6 @@
 languageCode = 'en-us'
 title = "Myna UI"
+baseURL = "https://mynaui.com/"
 
 disableKinds = ["taxonomy", "taxonomyTerm"]
 enableGitInfo = true
