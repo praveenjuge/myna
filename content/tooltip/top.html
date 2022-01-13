@@ -1,0 +1,24 @@
+---
+wrapper: "p-4 grid justify-center h-32"
+weight: 1
+---
+<!-- Position tooltip using popper -->
+<div class="absolute -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2">
+  <div role="tooltip"
+    class="relative max-w-xs px-3 py-2 text-xs font-medium text-center text-gray-300 break-words bg-gray-800 rounded shadow-lg outline-none">
+    <!-- Position arrow using popper -->
+    <svg class="absolute fill-gray-800" width="10" height="5" viewBox="0 0 30 10"
+      style="transform:translate3d(30px, -13px, 0px);" preserveAspectRatio="none">
+      <polygon points="15,0 30,10 0,10"></polygon>
+    </svg>
+    <span>New Project</span>
+  </div>
+</div>
+
+<svg class="w-6 h-6 stroke-gray-500" viewBox="0 0 256 256">
+  <circle cx="128" cy="128" r="96" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16">
+  </circle>
+  <circle cx="128" cy="180" r="12" class="fill-gray-500"></circle>
+  <path d="M128,144v-8a28,28,0,1,0-28-28" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16">
+  </path>
+</svg>

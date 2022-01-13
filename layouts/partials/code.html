@@ -11,11 +11,7 @@
             rel="noopener noreferrer" class="hover:underline hover:decoration-2">
             Edit on GitHub
           </a>
-          <span>·</span>
         </span>
-        <a href={{ .Permalink }} target="_blank" rel="noopener noreferrer" class="hover:underline hover:decoration-2">
-          View in Separate Page
-        </a>
       </div>
       <button title="More Options" class="p-1 text-xs font-medium rounded appearance-none select-none"
         x-on:click="options = !options"
@@ -26,6 +22,17 @@
           <circle cx="192" cy="128" r="20"></circle>
         </svg>
       </button>
+      <a href={{ .Permalink }} target="_blank" rel="noopener noreferrer" title="View in Separate Page"
+        class="p-1 text-xs font-medium text-gray-600 rounded appearance-none select-none hover:bg-gray-200">
+        <svg aria-hidden="true" class="w-4 h-4 stroke-gray-600" viewBox="0 0 256 256">
+          <polyline points="216 100 216 40 156 40" fill="none" stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="24"></polyline>
+          <line x1="144" y1="112" x2="216" y2="40" fill="none" stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="24"></line>
+          <path d="M184,144v64a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V80a8,8,0,0,1,8-8h64" fill="none" stroke-linecap="round"
+            stroke-linejoin="round" stroke-width="24"></path>
+        </svg>
+      </a>
       <button title="View Code" class="p-1 text-xs font-medium rounded appearance-none select-none"
         x-on:click="open = !open"
         :class="!open ? 'text-gray-600 hover:bg-gray-200' : 'text-white bg-gray-700 hover:bg-gray-800'">
@@ -41,11 +48,13 @@
       </button>
     </div>
   </div>
-  <div class="w-full border rounded overflow-hidden {{ .Params.wrapper }}" x-show="!open">
+  <div class="relative w-full overflow-hidden border rounded" x-show="!open">
     {{ if .Params.headerPadding }}
     <div class="h-16 bg-gray-50" aria-hidden="true"></div>
     {{ end }}
-    {{ .Content }}
+    <div class="{{ .Params.wrapper }}">
+      {{ .Content }}
+    </div>
     {{ if .Params.footerPadding }}
     <div class="h-24 bg-gray-50" aria-hidden="true"></div>
     {{ end }}
