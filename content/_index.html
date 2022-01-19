@@ -130,20 +130,26 @@
                 </div>
               </div>
               {{< /elementlink>}}
-                {{< elementlink link="/select">}}
+                {{< elementlink link="/range">}}
                   <div
-                    class="grid w-1/2 h-6 px-1.5 items-center transition bg-gray-100 border border-gray-200 rounded place-items-end group-hover:border-gray-300">
-                    <svg class="w-2.5 h-2.5 stroke-gray-400 fill-transparent" viewBox="0 0 256 256">
-                      <polyline points="208 96 128 176 48 96" stroke-linecap="round" stroke-linejoin="round"
-                        stroke-width="36"></polyline>
-                    </svg>
+                    class="flex items-center justify-center w-32 h-2 transition bg-gray-100 rounded-full group-hover:bg-gray-200">
+                    <div class="w-4 h-4 transition bg-gray-200 rounded-full group-hover:bg-gray-300"></div>
                   </div>
                   {{< /elementlink>}}
-                    {{< elementlink link="/textarea">}}
+                    {{< elementlink link="/select">}}
                       <div
-                        class="w-1/2 h-12 transition bg-gray-100 border border-gray-200 rounded group-hover:border-gray-300">
+                        class="grid w-1/2 h-6 px-1.5 items-center transition bg-gray-100 border border-gray-200 rounded place-items-end group-hover:border-gray-300">
+                        <svg class="w-2.5 h-2.5 stroke-gray-400 fill-transparent" viewBox="0 0 256 256">
+                          <polyline points="208 96 128 176 48 96" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="36"></polyline>
+                        </svg>
                       </div>
                       {{< /elementlink>}}
+                        {{< elementlink link="/textarea">}}
+                          <div
+                            class="w-1/2 h-12 transition bg-gray-100 border border-gray-200 rounded group-hover:border-gray-300">
+                          </div>
+                          {{< /elementlink>}}
   </div>
   <p class="mb-2 italic font-medium text-gray-600">Marketing</p>
   <div class="grid grid-cols-1 gap-4 mx-auto mb-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">

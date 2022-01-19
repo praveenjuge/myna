@@ -1,27 +1,25 @@
-<div class="mb-14" x-data="{ open: false, options: false }">
+<div class="mb-14" x-data="{ open: false }">
   <div class="flex items-center justify-between mb-1.5">
     <p class="font-medium text-gray-700 font-alegreya">{{ .File.TranslationBaseName | humanize | title }}</p>
-    <div class="flex space-x-0.5">
-      <div class="flex flex-wrap items-center justify-end w-full mr-2 space-x-1 text-xs font-medium text-gray-500"
-        x-show="options" x-cloak>
-        <p>Last Edited on {{ .Lastmod.Format "January 2, 2006" }}</p>
-        <span>·</span>
-        <span class="hidden space-x-1 md:flex">
-          <a href=https://github.com/praveenjuge/myna/edit/main/content/{{ .File.Path }} target="_blank"
-            rel="noopener noreferrer" class="hover:underline hover:decoration-2">
-            Edit on GitHub
-          </a>
-        </span>
-      </div>
-      <button title="More Options" class="p-1 text-xs font-medium rounded appearance-none select-none"
-        x-on:click="options = !options"
-        :class="!options ? 'text-gray-600 hover:bg-gray-200' : 'text-white bg-gray-700 hover:bg-gray-800'">
-        <svg aria-hidden="true" class="w-4 h-4" fill="currentColor" viewBox="0 0 256 256">
-          <circle cx="128" cy="128" r="20"></circle>
-          <circle cx="64" cy="128" r="20"></circle>
-          <circle cx="192" cy="128" r="20"></circle>
+    <div class="flex items-center space-x-0.5">
+      <p x-show="open" x-cloak class="text-sm font-medium text-gray-500 font-alegreya">Last Edited on {{ .Lastmod.Format "January 2, 2006" }}</p>
+      <a href=https://github.com/praveenjuge/myna/blob/main/content/{{ .File.Path }} target="_blank"
+        rel="noopener noreferrer" title="See on GitHub"
+        class="p-1 text-xs font-medium text-gray-600 rounded appearance-none select-none hover:bg-gray-200">
+        <svg aria-hidden="true" class="w-4 h-4 stroke-gray-600" viewBox="0 0 256 256">
+          <path d="M84,240a23.9,23.9,0,0,0,24-24V168" fill="none" stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="24"></path>
+          <path d="M172,240a23.9,23.9,0,0,1-24-24V168" fill="none" stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="24"></path>
+          <path d="M152,168h16a23.9,23.9,0,0,1,24,24v8a23.9,23.9,0,0,0,24,24" fill="none" stroke-linecap="round"
+            stroke-linejoin="round" stroke-width="24"></path>
+          <path d="M104,168H88a23.9,23.9,0,0,0-24,24v8a23.9,23.9,0,0,1-24,24" fill="none" stroke-linecap="round"
+            stroke-linejoin="round" stroke-width="24"></path>
+          <path
+            d="M111.8,64A52,52,0,0,0,68,40a52,52,0,0,0-3.5,44.7A49.3,49.3,0,0,0,56,112v8a48,48,0,0,0,48,48h48a48,48,0,0,0,48-48v-8a49.3,49.3,0,0,0-8.5-27.3A52,52,0,0,0,188,40a52,52,0,0,0-43.8,24Z"
+            fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></path>
         </svg>
-      </button>
+      </a>
       <a href={{ .Permalink }} target="_blank" rel="noopener noreferrer" title="View in Separate Page"
         class="p-1 text-xs font-medium text-gray-600 rounded appearance-none select-none hover:bg-gray-200">
         <svg aria-hidden="true" class="w-4 h-4 stroke-gray-600" viewBox="0 0 256 256">
