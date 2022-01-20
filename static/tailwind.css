@@ -3,6 +3,12 @@
 @tailwind utilities;
 
 @layer base {
+  x-cloak {
+    @apply !hidden;
+  }
+  .font-alegreya {
+    font-family: Alegreya, ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  }
   @font-face {
     font-family: 'Alegreya';
     font-style: normal;

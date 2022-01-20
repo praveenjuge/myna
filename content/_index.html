@@ -119,37 +119,44 @@
       </svg>
       {{< /elementlink>}}
         {{< elementlink link="/input">}}
-          <div class="w-1/2 h-6 transition bg-gray-100 border border-gray-200 rounded group-hover:border-gray-300">
+          <div class="w-1/2 h-6 transition bg-gray-100 rounded group-hover:bg-gray-200">
           </div>
           {{< /elementlink>}}
-            {{< elementlink link="/radio">}}
-              <div
-                class="grid w-8 h-8 transition bg-gray-200 border border-gray-200 rounded-full group-hover:border-gray-300 place-items-center">
-                <div
-                  class="w-3 h-3 transition bg-white border border-gray-200 rounded-full group-hover:border-gray-300">
+            {{< elementlink link="/input-group">}}
+              <div class="flex -space-x-px">
+                <div class="w-24 h-6 transition bg-gray-100 rounded-l group-hover:bg-gray-200">
+                </div>
+                <div class="w-8 h-6 transition bg-gray-200 rounded-r group-hover:bg-gray-300">
                 </div>
               </div>
               {{< /elementlink>}}
-                {{< elementlink link="/range">}}
+                {{< elementlink link="/radio">}}
                   <div
-                    class="flex items-center justify-center w-32 h-2 transition bg-gray-100 rounded-full group-hover:bg-gray-200">
-                    <div class="w-4 h-4 transition bg-gray-200 rounded-full group-hover:bg-gray-300"></div>
+                    class="grid w-8 h-8 transition bg-gray-200 border border-gray-200 rounded-full group-hover:border-gray-300 place-items-center">
+                    <div
+                      class="w-3 h-3 transition bg-white border border-gray-200 rounded-full group-hover:border-gray-300">
+                    </div>
                   </div>
                   {{< /elementlink>}}
-                    {{< elementlink link="/select">}}
+                    {{< elementlink link="/range">}}
                       <div
-                        class="grid w-1/2 h-6 px-1.5 items-center transition bg-gray-100 border border-gray-200 rounded place-items-end group-hover:border-gray-300">
-                        <svg class="w-2.5 h-2.5 stroke-gray-400 fill-transparent" viewBox="0 0 256 256">
-                          <polyline points="208 96 128 176 48 96" stroke-linecap="round" stroke-linejoin="round"
-                            stroke-width="36"></polyline>
-                        </svg>
+                        class="flex items-center justify-center w-32 h-2 transition bg-gray-100 rounded-full group-hover:bg-gray-200">
+                        <div class="w-4 h-4 transition bg-gray-200 rounded-full group-hover:bg-gray-300"></div>
                       </div>
                       {{< /elementlink>}}
-                        {{< elementlink link="/textarea">}}
+                        {{< elementlink link="/select">}}
                           <div
-                            class="w-1/2 h-12 transition bg-gray-100 border border-gray-200 rounded group-hover:border-gray-300">
+                            class="grid items-center w-1/2 h-6 px-2 transition bg-gray-100 rounded place-items-end group-hover:bg-gray-200">
+                            <svg class="w-2.5 h-2.5 stroke-gray-400 fill-transparent" viewBox="0 0 256 256">
+                              <polyline points="208 96 128 176 48 96" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="36"></polyline>
+                            </svg>
                           </div>
                           {{< /elementlink>}}
+                            {{< elementlink link="/textarea">}}
+                              <div class="w-1/2 h-12 transition bg-gray-100 rounded group-hover:bg-gray-200">
+                              </div>
+                              {{< /elementlink>}}
   </div>
   <p class="mb-2 italic font-medium text-gray-600">Marketing</p>
   <div class="grid grid-cols-1 gap-4 mx-auto mb-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">

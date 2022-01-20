@@ -2,7 +2,9 @@
   <div class="flex items-center justify-between mb-1.5">
     <p class="font-medium text-gray-700 font-alegreya">{{ .File.TranslationBaseName | humanize | title }}</p>
     <div class="flex items-center space-x-0.5">
-      <p x-show="open" x-cloak class="text-sm font-medium text-gray-500 font-alegreya">Last Edited on {{ .Lastmod.Format "January 2, 2006" }}</p>
+      <p x-show="open" x-cloak class="text-sm font-medium text-gray-500 font-alegreya">
+        Last Edited on {{ .Lastmod.Format "January 2, 2006" }}
+      </p>
       <a href=https://github.com/praveenjuge/myna/blob/main/content/{{ .File.Path }} target="_blank"
         rel="noopener noreferrer" title="See on GitHub"
         class="p-1 text-xs font-medium text-gray-600 rounded appearance-none select-none hover:bg-gray-200">
