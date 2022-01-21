@@ -1,10 +1,10 @@
 <a {{ if .Get "link" }} href={{ .Get "link" }} {{ end }}
-  class="flex flex-col overflow-hidden font-semibold text-gray-700 transition border rounded border-gray-200/75 h-36 group hover:border-gray-300 focus-within:outline-none focus-within:ring-2 focus-within:ring-gray-200 focus-within:border-gray-200">
+  class="flex flex-col overflow-hidden font-semibold text-gray-700 transition bg-white h-36 group focus:outline-none focus:z-10 focus:ring-yellow-400 focus:ring-2 ring-1 ring-gray-200/75 font-alegreya">
   <div aria-hidden="true" class="flex items-center justify-center flex-1 select-none">
     {{ .Inner | safeHTML }}
   </div>
   <div class="flex items-center justify-between px-3 pb-2">
-    <span class="truncate font-alegreya">{{ .Get "link" | humanize | title }}</span>
+    <span class="truncate">{{ .Get "link" | humanize | title }}</span>
     <svg aria-hidden="true" viewBox="0 0 16 16"
       class="h-4 w-4 flex flex-shrink-0 transition text-gray-400 group-hover:translate-x-0.5">
       <path fill="currentColor"
