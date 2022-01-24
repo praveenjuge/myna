@@ -152,19 +152,31 @@
                             </path>
                           </svg>
                           {{< /elementlink>}}
-                            {{< elementlink link="/select">}}
-                              <div
-                                class="grid items-center w-1/2 h-6 px-2 transition bg-gray-100 rounded place-items-end group-hover:bg-gray-200">
-                                <svg class="w-2.5 h-2.5 stroke-gray-400 fill-transparent" viewBox="0 0 256 256">
-                                  <polyline points="208 96 128 176 48 96" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="36"></polyline>
-                                </svg>
-                              </div>
+                            {{< elementlink link="/search">}}
+                              <svg class="w-8 h-8 transition stroke-gray-200 group-hover:stroke-gray-300 shrink-0"
+                                viewBox="0 0 256 256">
+                                <circle cx="116" cy="116" r="84"
+                                  class="transition fill-gray-100 group-hover:fill-gray-200">
+                                </circle>
+                                <circle cx="116" cy="116" r="84" fill="none" stroke-linecap="round"
+                                  stroke-linejoin="round" stroke-width="16"></circle>
+                                <line x1="175.4" y1="175.4" x2="224" y2="224" fill="none" stroke-linecap="round"
+                                  stroke-linejoin="round" stroke-width="16"></line>
+                              </svg>
                               {{< /elementlink>}}
-                                {{< elementlink link="/textarea">}}
-                                  <div class="w-1/2 h-12 transition bg-gray-100 rounded group-hover:bg-gray-200">
+                                {{< elementlink link="/select">}}
+                                  <div
+                                    class="grid items-center w-1/2 h-6 px-2 transition bg-gray-100 rounded place-items-end group-hover:bg-gray-200">
+                                    <svg class="w-2.5 h-2.5 stroke-gray-400 fill-transparent" viewBox="0 0 256 256">
+                                      <polyline points="208 96 128 176 48 96" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="36"></polyline>
+                                    </svg>
                                   </div>
                                   {{< /elementlink>}}
+                                    {{< elementlink link="/textarea">}}
+                                      <div class="w-1/2 h-12 transition bg-gray-100 rounded group-hover:bg-gray-200">
+                                      </div>
+                                      {{< /elementlink>}}
   </div>
   <p class="mt-10 mb-2 italic font-medium text-gray-600">Marketing</p>
   <div class="grid grid-cols-1 gap-y-px gap-x-px sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
