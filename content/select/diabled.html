@@ -1,14 +1,14 @@
 ---
-wrapper: 'p-4 grid place-items-center'
+wrapper: 'p-4 grid max-w-sm mx-auto'
 forms: true
 ---
 
-<div class="w-full max-w-xs space-y-0.5">
+<div class="w-full space-y-0.5">
   <label for="disabled" class="text-sm text-gray-500">Best Fruit</label>
   <select
+    disabled
     id="disabled"
     name="disabled"
-    disabled
     class="block w-full truncate rounded-md border-gray-200 pr-8 text-sm transition focus:border-blue-600 focus:ring-blue-600 disabled:cursor-not-allowed disabled:bg-gray-200 disabled:opacity-75">
     <option selected>Oranges</option>
     <option>Apples</option>
