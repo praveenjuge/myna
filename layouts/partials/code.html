@@ -1,69 +1,145 @@
 <div class="mb-14" x-data="{ open: false }">
-  <div class="flex items-center justify-between mb-1.5">
-    <p class="font-medium text-gray-700 font-alegreya">{{ .File.TranslationBaseName | humanize | title }}</p>
+  <div class="mb-1.5 flex items-center justify-between">
+    <p class="font-alegreya font-medium text-gray-700">
+      {{ .File.TranslationBaseName | humanize | title }}
+    </p>
     <div class="flex items-center space-x-0.5">
-      <p x-show="open" x-cloak class="text-sm font-medium text-gray-500 font-alegreya">
+      <p
+        x-show="open"
+        x-cloak
+        class="font-alegreya text-sm font-medium text-gray-500">
         Last Edited on {{ .Lastmod.Format "January 2, 2006" }}
       </p>
-      <a href=https://github.com/praveenjuge/myna/blob/main/content/{{ .File.Path }} target="_blank"
-        rel="noopener noreferrer" title="See on GitHub"
-        class="p-1 text-xs font-medium text-gray-600 rounded appearance-none select-none hover:bg-gray-200">
-        <svg aria-hidden="true" class="w-4 h-4 stroke-gray-600" viewBox="0 0 256 256">
-          <path d="M84,240a23.9,23.9,0,0,0,24-24V168" fill="none" stroke-linecap="round" stroke-linejoin="round"
+      <a
+        href=https://github.com/praveenjuge/myna/blob/main/content/{{ .File.Path }}
+        target="_blank"
+        rel="noopener noreferrer"
+        title="See on GitHub"
+        class="select-none appearance-none rounded p-1 text-xs font-medium text-gray-600 hover:bg-gray-200">
+        <svg
+          aria-hidden="true"
+          class="h-4 w-4 stroke-gray-600"
+          viewBox="0 0 256 256">
+          <path
+            d="M84,240a23.9,23.9,0,0,0,24-24V168"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
             stroke-width="24"></path>
-          <path d="M172,240a23.9,23.9,0,0,1-24-24V168" fill="none" stroke-linecap="round" stroke-linejoin="round"
+          <path
+            d="M172,240a23.9,23.9,0,0,1-24-24V168"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
             stroke-width="24"></path>
-          <path d="M152,168h16a23.9,23.9,0,0,1,24,24v8a23.9,23.9,0,0,0,24,24" fill="none" stroke-linecap="round"
-            stroke-linejoin="round" stroke-width="24"></path>
-          <path d="M104,168H88a23.9,23.9,0,0,0-24,24v8a23.9,23.9,0,0,1-24,24" fill="none" stroke-linecap="round"
-            stroke-linejoin="round" stroke-width="24"></path>
+          <path
+            d="M152,168h16a23.9,23.9,0,0,1,24,24v8a23.9,23.9,0,0,0,24,24"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="24"></path>
+          <path
+            d="M104,168H88a23.9,23.9,0,0,0-24,24v8a23.9,23.9,0,0,1-24,24"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="24"></path>
           <path
             d="M111.8,64A52,52,0,0,0,68,40a52,52,0,0,0-3.5,44.7A49.3,49.3,0,0,0,56,112v8a48,48,0,0,0,48,48h48a48,48,0,0,0,48-48v-8a49.3,49.3,0,0,0-8.5-27.3A52,52,0,0,0,188,40a52,52,0,0,0-43.8,24Z"
-            fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></path>
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="24"></path>
         </svg>
       </a>
-      <a href={{ .Permalink }} target="_blank" rel="noopener noreferrer" title="View in Separate Page"
-        class="p-1 text-xs font-medium text-gray-600 rounded appearance-none select-none hover:bg-gray-200">
-        <svg aria-hidden="true" class="w-4 h-4 stroke-gray-600" viewBox="0 0 256 256">
-          <polyline points="216 100 216 40 156 40" fill="none" stroke-linecap="round" stroke-linejoin="round"
+      <a
+        href="{{ .Permalink }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="View in Separate Page"
+        class="select-none appearance-none rounded p-1 text-xs font-medium text-gray-600 hover:bg-gray-200">
+        <svg
+          aria-hidden="true"
+          class="h-4 w-4 stroke-gray-600"
+          viewBox="0 0 256 256">
+          <polyline
+            points="216 100 216 40 156 40"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
             stroke-width="24"></polyline>
-          <line x1="144" y1="112" x2="216" y2="40" fill="none" stroke-linecap="round" stroke-linejoin="round"
+          <line
+            x1="144"
+            y1="112"
+            x2="216"
+            y2="40"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
             stroke-width="24"></line>
-          <path d="M184,144v64a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V80a8,8,0,0,1,8-8h64" fill="none" stroke-linecap="round"
-            stroke-linejoin="round" stroke-width="24"></path>
+          <path
+            d="M184,144v64a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V80a8,8,0,0,1,8-8h64"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="24"></path>
         </svg>
       </a>
-      <button title="View Code" class="p-1 text-xs font-medium rounded appearance-none select-none"
+      <button
+        title="View Code"
+        class="select-none appearance-none rounded p-1 text-xs font-medium"
         x-on:click="open = !open"
         :class="!open ? 'text-gray-600 hover:bg-gray-200' : 'text-white bg-gray-700 hover:bg-gray-800'">
-        <svg aria-hidden="true" class="w-4 h-4" fill="currentColor" viewBox="0 0 256 256">
+        <svg
+          aria-hidden="true"
+          class="h-4 w-4"
+          fill="currentColor"
+          viewBox="0 0 256 256">
           <rect width="256" height="256" fill="none"></rect>
-          <polyline points="64 88 16 128 64 168" fill="none" stroke="currentColor" stroke-linecap="round"
-            stroke-linejoin="round" stroke-width="24"></polyline>
-          <polyline points="192 88 240 128 192 168" fill="none" stroke="currentColor" stroke-linecap="round"
-            stroke-linejoin="round" stroke-width="24"></polyline>
-          <line x1="160" y1="40" x2="96" y2="216" fill="none" stroke="currentColor" stroke-linecap="round"
-            stroke-linejoin="round" stroke-width="24"></line>
+          <polyline
+            points="64 88 16 128 64 168"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="24"></polyline>
+          <polyline
+            points="192 88 240 128 192 168"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="24"></polyline>
+          <line
+            x1="160"
+            y1="40"
+            x2="96"
+            y2="216"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="24"></line>
         </svg>
       </button>
     </div>
   </div>
-  <div class="relative w-full overflow-hidden border rounded" x-show="!open">
+  <div class="relative w-full overflow-hidden rounded border" x-show="!open">
     {{ if .Params.headerPadding }}
     <div class="h-16 bg-gray-50" aria-hidden="true"></div>
     {{ end }}
-    <div class="{{ .Params.wrapper }}">
-      {{ .Content }}
-    </div>
+    <div class="{{ .Params.wrapper }}">{{ .Content }}</div>
     {{ if .Params.footerPadding }}
     <div class="h-24 bg-gray-50" aria-hidden="true"></div>
     {{ end }}
   </div>
-  <div class="relative prose prose-pre:max-h-[20rem] max-w-none prose-pre:my-0" x-show="open" x-cloak>
-    {{ .Scratch.Set "finalCode" .Content }}
-    {{ if .Params.forms }}
-    {{ .Scratch.Set "finalCode" (print "<!-- Needs TailwindCSS Forms Plugin github.com/tailwindlabs/tailwindcss-forms -->\n" .Content) }}
-    {{ end }}
-    {{ highlight (.Scratch.Get "finalCode") "html" "style=dracula" }}
+  <div
+    class="prose relative max-w-none prose-pre:my-0 prose-pre:max-h-[20rem]"
+    x-show="open"
+    x-cloak>
+    {{ .Scratch.Set "finalCode" (replace .Content "\n<" "<" 1) }} {{ if
+    .Params.forms }} {{ .Scratch.Set "finalCode" (print "<!-- Needs TailwindCSS Forms Plugin github.com/tailwindlabs/tailwindcss-forms -->\n"
+    .Content) }} {{ end }} {{ highlight (.Scratch.Get "finalCode") "html"
+    "style=dracula" }}
   </div>
 </div>

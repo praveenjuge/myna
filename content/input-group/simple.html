@@ -1,12 +1,17 @@
 ---
-wrapper: "p-4 flex flex-col max-w-xs w-full mx-auto"
+wrapper: 'p-4 flex flex-col max-w-xs w-full mx-auto'
 forms: true
 ---
+
 <div class="flex w-full space-x-2">
-  <input id="name" type="text" placeholder="Enter your name"
-    class="block w-full text-sm transition border-gray-200 rounded focus:border-blue-600 focus:ring-blue-600 disabled:cursor-not-allowed disabled:bg-gray-200 disabled:opacity-75">
-  <button type="submit"
-    class="inline-flex items-center justify-center w-auto px-3 py-2 space-x-1 text-sm font-medium text-gray-800 transition bg-white border border-gray-200 rounded appearance-none cursor-pointer select-none focus:outline-none focus:ring-2 hover:bg-gray-100 hover:border-gray-300 focus:border-gray-300 focus:ring-gray-300 shrink-0">
+  <input
+    id="name"
+    type="text"
+    placeholder="Enter your name"
+    class="block w-full rounded border-gray-200 text-sm transition focus:border-blue-600 focus:ring-blue-600 disabled:cursor-not-allowed disabled:bg-gray-200 disabled:opacity-75" />
+  <button
+    type="submit"
+    class="inline-flex w-auto shrink-0 cursor-pointer select-none appearance-none items-center justify-center space-x-1 rounded border border-gray-200 bg-white px-3 py-2 text-sm font-medium text-gray-800 transition hover:border-gray-300 hover:bg-gray-100 focus:border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-300">
     Sign up
   </button>
 </div>

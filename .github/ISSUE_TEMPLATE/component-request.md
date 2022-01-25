@@ -4,7 +4,6 @@ about: Suggest an new component or template idea for Myna UI
 title: ''
 labels: New Component
 assignees: praveenjuge
-
 ---
 
 **Describe what you want**

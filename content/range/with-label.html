@@ -1,14 +1,21 @@
 ---
-wrapper: "p-4 flex flex-col max-w-xs w-full mx-auto space-y-6"
+wrapper: 'p-4 flex flex-col max-w-xs w-full mx-auto space-y-6'
 ---
+
 <div>
   <label for="range1" class="block text-sm text-gray-500">Select Time</label>
-  <input type="range" id="range1"
-    class="w-full h-2 bg-gray-200 rounded-full appearance-none cursor-ew-resize disabled:cursor-not-allowed" />
+  <input
+    type="range"
+    id="range1"
+    class="h-2 w-full cursor-ew-resize appearance-none rounded-full bg-gray-200 disabled:cursor-not-allowed" />
 </div>
 
 <div class="flex items-center space-x-4">
-  <label for="range2" class="block mb-1 text-sm text-gray-500 shrink-0">Select Day</label>
-  <input type="range" id="range2"
-    class="w-full h-2 bg-gray-200 rounded-full appearance-none cursor-ew-resize disabled:cursor-not-allowed" />
+  <label for="range2" class="mb-1 block shrink-0 text-sm text-gray-500">
+    Select Day
+  </label>
+  <input
+    type="range"
+    id="range2"
+    class="h-2 w-full cursor-ew-resize appearance-none rounded-full bg-gray-200 disabled:cursor-not-allowed" />
 </div>

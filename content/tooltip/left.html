@@ -1,24 +1,41 @@
 ---
-wrapper: "p-4 grid justify-center items-center h-32"
+wrapper: 'p-4 grid justify-center items-center h-32'
 weight: 4
 ---
+
 <!-- Position tooltip using popper -->
-<div class="absolute -translate-y-1/2 translate-x-[-125%] left-1/2 top-1/2">
-  <div role="tooltip"
-    class="relative max-w-xs px-3 py-2 text-xs font-medium text-center text-gray-300 break-words bg-gray-800 rounded shadow-lg outline-none">
+<div class="absolute left-1/2 top-1/2 -translate-y-1/2 translate-x-[-125%]">
+  <div
+    role="tooltip"
+    class="relative max-w-xs break-words rounded bg-gray-800 px-3 py-2 text-center text-xs font-medium text-gray-300 shadow-lg outline-none">
     <!-- Position arrow using popper -->
-    <svg class="absolute fill-gray-800" width="5" height="8" viewBox="0 0 30 10"
-      style="transform:translate3d(82px, 4px, 0px);" preserveAspectRatio="none">
+    <svg
+      class="absolute fill-gray-800"
+      width="5"
+      height="8"
+      viewBox="0 0 30 10"
+      style="transform: translate3d(82px, 4px, 0px)"
+      preserveAspectRatio="none">
       <polygon points="0,0 30,5 0,10"></polygon>
     </svg>
     <span>New Project</span>
   </div>
 </div>
 
-<svg class="w-6 h-6 stroke-gray-500" viewBox="0 0 256 256">
-  <circle cx="128" cy="128" r="96" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16">
-  </circle>
+<svg class="h-6 w-6 stroke-gray-500" viewBox="0 0 256 256">
+  <circle
+    cx="128"
+    cy="128"
+    r="96"
+    fill="none"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-width="16"></circle>
   <circle cx="128" cy="180" r="12" class="fill-gray-500"></circle>
-  <path d="M128,144v-8a28,28,0,1,0-28-28" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16">
-  </path>
+  <path
+    d="M128,144v-8a28,28,0,1,0-28-28"
+    fill="none"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-width="16"></path>
 </svg>

@@ -1,0 +1,8 @@
+public/
+resources/
+node_modules/
+
+static/main.css
+static/main.js
+layouts/shortcodes/elementlink.html
+layouts/partials/code.html

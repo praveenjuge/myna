@@ -1,20 +1,15 @@
 <!DOCTYPE html>
 <html lang="en-us">
+  <head itemscope itemtype="https://schema.org/WebPage">
+    {{ partial "meta" . }}
+  </head>
 
-<head itemscope itemtype="https://schema.org/WebPage">
-  {{ partial "meta" . }}
-</head>
-
-<body class="font-sans antialiased">
-  {{ if .IsPage }}
-  {{ block "main" . }}{{ end }}
-  {{ else }}
-  {{ partial "header" . }}
-  <main class='{{ if .IsHome }}{{ else }}p-4 mx-auto max-w-[85rem]{{ end }}'>
-    {{ block "main" . }}{{ end }}
-  </main>
-  {{ partial "footer" . }}
-  {{ end }}
-</body>
-
+  <body class="font-sans antialiased">
+    {{ if .IsPage }} {{ block "main" . }}{{ end }} {{ else }} {{ partial
+    "header" . }}
+    <main class="{{ if .IsHome }}{{ else }}p-4 mx-auto max-w-[85rem]{{ end }}">
+      {{ block "main" . }}{{ end }}
+    </main>
+    {{ partial "footer" . }} {{ end }}
+  </body>
 </html>
