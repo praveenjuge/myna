@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "production": "cross-env NODE_ENV=production npm run tailwind:build && hugo --minify",
+    "production": "cross-env NODE_ENV=production npm run tailwind:build && hugo",
     "start": "cross-env NODE_ENV=development concurrently \"npm run tailwind:watch\" \"hugo server\"",
     "tailwind:build": "./node_modules/tailwindcss/lib/cli.js -i ./static/tailwind.css -o ./static/main.css --minify",
     "tailwind:watch": "./node_modules/tailwindcss/lib/cli.js -i ./static/tailwind.css -o ./static/main.css -w"
@@ -10,7 +10,7 @@
     "@tailwindcss/typography": "^0.5.0",
     "concurrently": "^7.0.0",
     "cross-env": "^7.0.3",
-    "tailwindcss": "^3.0.16"
+    "tailwindcss": "^3.0.17"
   },
   "devDependencies": {
     "prettier": "2.5.1",

@@ -1,16 +1,20 @@
 ---
-wrapper: 'p-4 grid max-w-sm mx-auto'
+wrapper: 'p-4 grid max-w-md mx-auto'
 forms: true
 ---
 
-<div class="w-full space-y-0.5">
-  <label for="error" class="text-sm text-gray-500">Write your review:</label>
+<div class="w-full space-y-1">
+  <label for="error" class="text-xs font-medium text-gray-500">
+    Write your review:
+  </label>
   <textarea
-    id="error"
     rows="4"
+    id="error"
     placeholder="Enter your review here"
     class="block w-full rounded-md border-red-600 text-sm ring-1 ring-red-600 transition focus:border-blue-600 focus:ring-blue-600 disabled:cursor-not-allowed disabled:bg-gray-200 disabled:opacity-75">
 I don't like this...  
   </textarea>
-  <p class="pt-1 text-xs text-red-600">We don't accept negative reviews</p>
+  <p class="text-xs font-medium text-red-600">
+    We don't accept negative reviews
+  </p>
 </div>

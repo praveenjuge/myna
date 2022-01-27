@@ -1,0 +1,26 @@
+---
+wrapper: 'p-4 grid max-w-sm mx-auto'
+forms: true
+---
+
+<div class="w-full space-y-0.5">
+  <label for="icon-avatar" class="text-xs font-medium text-gray-500">
+    Best Fruit
+  </label>
+  <div class="relative">
+    <div
+      class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-2.5">
+      <img
+        class="flex h-5 w-5 shrink-0 rounded-full bg-gray-100 object-cover object-center"
+        src="https://source.boringavatars.com/beam/1?square" />
+    </div>
+    <select
+      id="icon-avatar"
+      name="icon-avatar"
+      class="block w-full truncate rounded-md border-gray-200 pl-9 pr-8 text-sm transition focus:border-blue-600 focus:ring-blue-600 disabled:cursor-not-allowed disabled:bg-gray-200 disabled:opacity-75">
+      <option>Oranges</option>
+      <option selected>Apples</option>
+      <option>Tomato</option>
+    </select>
+  </div>
+</div>

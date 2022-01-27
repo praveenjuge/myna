@@ -1,0 +1,38 @@
+---
+wrapper: 'p-4 grid max-w-sm mx-auto'
+forms: true
+---
+
+<fieldset class="space-y-6">
+  <div class="inline-flex w-full items-start space-x-1.5">
+    <input
+      id="1"
+      type="radio"
+      name="desc"
+      class="cursor-pointer rounded-full border-gray-300 text-blue-600 transition focus:ring-blue-600 disabled:cursor-not-allowed disabled:bg-gray-200 disabled:opacity-75" />
+    <label
+      for="1"
+      class="flex cursor-pointer flex-col space-y-1 truncate whitespace-normal text-xs">
+      <span class="font-medium text-gray-900">Tasks</span>
+      <span class="text-gray-500">
+        Get notified if there's are new tasks added to your project, or if a
+        task is completed.
+      </span>
+    </label>
+  </div>
+  <div class="inline-flex w-full items-start space-x-1.5">
+    <input
+      id="2"
+      type="radio"
+      name="desc"
+      class="cursor-pointer rounded-full border-gray-300 text-blue-600 transition focus:ring-blue-600 disabled:cursor-not-allowed disabled:bg-gray-200 disabled:opacity-75" />
+    <label
+      for="2"
+      class="flex cursor-pointer flex-col space-y-1 truncate whitespace-normal text-xs">
+      <span class="font-medium text-gray-900">Projects</span>
+      <span class="text-gray-500">
+        Get notified if there's are new projects added to your teams.
+      </span>
+    </label>
+  </div>
+</fieldset>

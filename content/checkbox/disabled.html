@@ -5,11 +5,13 @@ forms: true
 
 <div class="inline-flex items-center space-x-1.5">
   <input
+    disabled
     id="disabled"
     type="checkbox"
-    disabled
-    class="cursor-pointer rounded border-gray-300 text-blue-600 transition focus:border-blue-600 focus:ring-blue-600 disabled:cursor-not-allowed disabled:bg-gray-200 disabled:opacity-75" />
-  <label for="disabled" class="cursor-pointer truncate text-sm text-gray-500">
+    class="cursor-pointer rounded border-gray-300 text-blue-600 transition focus:ring-blue-600 disabled:cursor-not-allowed disabled:bg-gray-200 disabled:opacity-75" />
+  <label
+    for="disabled"
+    class="cursor-pointer truncate text-xs font-medium text-gray-500">
     Are you ready?
   </label>
 </div>

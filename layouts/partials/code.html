@@ -3,13 +3,14 @@
     <p class="font-alegreya font-medium text-gray-700">
       {{ .File.TranslationBaseName | humanize | title }}
     </p>
-    <div class="flex items-center space-x-0.5">
-      <p
+    <div class="flex items-center">
+      <div
         x-show="open"
-        x-cloak
-        class="font-alegreya text-sm font-medium text-gray-500">
-        Last Edited on {{ .Lastmod.Format "January 2, 2006" }}
-      </p>
+        style="display: none"
+        class="font-alegreya text-sm font-medium text-gray-500 flex items-center">
+        <span>Last edited on {{ .Lastmod.Format "January 2, 2006" }}</span>
+        <div aria-hidden="true" class="w-px bg-gray-200 h-4 ml-2 mr-1"></div>
+      </div>
       <a
         href=https://github.com/praveenjuge/myna/blob/main/content/{{ .File.Path }}
         target="_blank"
@@ -85,6 +86,7 @@
             stroke-width="24"></path>
         </svg>
       </a>
+      <div aria-hidden="true" class="w-px bg-gray-200 h-4 mx-1"></div>
       <button
         title="Copy Code"
         class="select-none appearance-none rounded p-1 text-xs font-medium text-gray-600 hover:bg-gray-200"
@@ -96,7 +98,8 @@
       >
         <svg aria-hidden="true" class="h-4 w-4 stroke-gray-600" viewBox="0 0 256 256">
           <polyline points="220 176 220 36 80 36" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></polyline>
-          <rect x="40" y="76" width="140" height="140" stroke-linecap="round" stroke-linejoin="round" stroke-width="24" :class="!copied ? 'fill-transparent' : 'fill-gray-600'"></rect>
+          <rect x="40" y="76" width="140" height="140" stroke-linecap="round" stroke-linejoin="round" stroke-width="24" 
+          class="fill-transparent" :class="!copied ? 'fill-transparent' : 'fill-gray-600'"></rect>
         </svg>
       </button>
       <button
@@ -142,7 +145,7 @@
     {{ if .Params.headerPadding }}
     <div class="h-16 bg-gray-50" aria-hidden="true"></div>
     {{ end }}
-    <div class="{{ .Params.wrapper }}" x-ref="content">{{ .Content }}</div>
+    <div class="{{ .Params.wrapper }}" x-ref="content">{{ replace .Content "\n<" "<" 1 | safeHTML }}</div>
     {{ if .Params.footerPadding }}
     <div class="h-24 bg-gray-50" aria-hidden="true"></div>
     {{ end }}
@@ -150,9 +153,9 @@
   <div
     class="prose relative max-w-none prose-pre:my-0 prose-pre:max-h-[20rem]"
     x-show="open"
-    x-cloak>
+    style="display: none">
     {{ .Scratch.Set "finalCode" (replace .Content "\n<" "<" 1) }} {{ if
-    .Params.forms }} {{ .Scratch.Set "finalCode" (print "<!-- Needs TailwindCSS Forms Plugin github.com/tailwindlabs/tailwindcss-forms -->\n"
+    .Params.forms }} {{ .Scratch.Set "finalCode" (print "<!-- Needs TailwindCSS Forms Plugin github.com/tailwindlabs/tailwindcss-forms -->"
     .Content) }} {{ end }} {{ highlight (.Scratch.Get "finalCode") "html"
     "style=dracula" }}
   </div>

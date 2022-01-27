@@ -4,12 +4,16 @@ forms: true
 ---
 
 <div class="w-full space-y-0.5">
-  <label for="error" class="text-sm text-gray-500">Email Address</label>
+  <label for="error" class="text-xs font-medium text-gray-500">
+    Email Address
+  </label>
   <input
     id="error"
     type="email"
     placeholder="Enter your email"
     value="mail@hey.com"
     class="block w-full rounded-md border-red-600 text-sm ring-1 ring-red-600 transition focus:border-blue-600 focus:ring-blue-600 disabled:cursor-not-allowed disabled:bg-gray-200 disabled:opacity-75" />
-  <p class="pt-1 text-xs text-red-600">Your email doesn't match our records.</p>
+  <p class="pt-1 text-xs font-medium text-red-600">
+    Your email doesn't match our records.
+  </p>
 </div>

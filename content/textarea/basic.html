@@ -1,13 +1,15 @@
 ---
-wrapper: 'p-4 grid max-w-sm mx-auto'
+wrapper: 'p-4 grid max-w-md mx-auto'
 forms: true
 ---
 
-<div class="w-full space-y-0.5">
-  <label for="basic" class="text-sm text-gray-500">Write your review:</label>
+<div class="w-full space-y-1">
+  <label for="basic" class="text-xs font-medium text-gray-500">
+    Write your review:
+  </label>
   <textarea
-    id="basic"
     rows="4"
+    id="basic"
     placeholder="Enter your review here"
     class="block w-full rounded-md border-gray-200 text-sm transition focus:border-blue-600 focus:ring-blue-600 disabled:cursor-not-allowed disabled:bg-gray-200 disabled:opacity-75"></textarea>
 </div>
