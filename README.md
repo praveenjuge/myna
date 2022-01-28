@@ -2,6 +2,8 @@
 
 Perfect UI components and templates. Made with TailwindCSS. Open Source. Fully responsive and accessible.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6f127b33-52f0-4c85-903f-d06f8d80b555/deploy-status)](https://app.netlify.com/sites/mynaui/deploys)
+
 ## Bugs & Suggestions
 
 Found a bug? [Please open a issue](https://github.com/praveenjuge/myna/issues/new/choose).

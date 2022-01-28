@@ -1,11 +1,13 @@
-<div class="mb-14" x-data="{ open: false, copied: false }">
+<div class="mb-14">
   <div class="mb-1.5 flex items-center justify-between">
-    <p class="font-alegreya font-medium text-gray-700">
+    <a 
+      id={{ .File.ContentBaseName }}
+      href="#{{ .File.ContentBaseName }}"
+      class="block font-alegreya font-medium text-gray-700">
       {{ .File.TranslationBaseName | humanize | title }}
-    </p>
+    </a>
     <div class="flex items-center">
       <div
-        x-show="open"
         style="display: none"
         class="font-alegreya text-sm font-medium text-gray-500 flex items-center">
         <span>Last edited on {{ .Lastmod.Format "January 2, 2006" }}</span>
@@ -90,23 +92,19 @@
       <button
         title="Copy Code"
         class="select-none appearance-none rounded p-1 text-xs font-medium text-gray-600 hover:bg-gray-200"
-        @click="
-          copied = true;
-          navigator.clipboard.writeText($refs.content.innerHTML);
-          setTimeout(function() {copied = false}, 1000);
-        "
+        onclick="copy('{{ .File.ContentBaseName }}')"
       >
         <svg aria-hidden="true" class="h-4 w-4 stroke-gray-600" viewBox="0 0 256 256">
           <polyline points="220 176 220 36 80 36" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></polyline>
           <rect x="40" y="76" width="140" height="140" stroke-linecap="round" stroke-linejoin="round" stroke-width="24" 
-          class="fill-transparent" :class="!copied ? 'fill-transparent' : 'fill-gray-600'"></rect>
+          class="fill-transparent" id='{{ .File.ContentBaseName }}-copy-rect'></rect>
         </svg>
       </button>
       <button
         title="View Code"
-        class="select-none appearance-none rounded p-1 text-xs font-medium"
-        x-on:click="open = !open"
-        :class="!open ? 'text-gray-600 hover:bg-gray-200' : 'text-white bg-gray-700 hover:bg-gray-800'">
+        class="select-none appearance-none rounded p-1 text-xs font-medium text-gray-600 hover:bg-gray-200"
+        onclick="toggle('{{ .File.ContentBaseName }}')"
+        id="{{ .File.ContentBaseName }}-toggle">
         <svg
           aria-hidden="true"
           class="h-4 w-4"
@@ -141,18 +139,18 @@
       </button>
     </div>
   </div>
-  <div class="relative w-full overflow-hidden rounded border" x-show="!open">
+  <div class="relative w-full overflow-hidden rounded border" id='{{ .File.ContentBaseName }}-view'>
     {{ if .Params.headerPadding }}
     <div class="h-16 bg-gray-50" aria-hidden="true"></div>
     {{ end }}
-    <div class="{{ .Params.wrapper }}" x-ref="content">{{ replace .Content "\n<" "<" 1 | safeHTML }}</div>
+    <div class="{{ .Params.wrapper }}" id='{{ .File.ContentBaseName }}-content'>{{ replace .Content "\n<" "<" 1 | safeHTML }}</div>
     {{ if .Params.footerPadding }}
     <div class="h-24 bg-gray-50" aria-hidden="true"></div>
     {{ end }}
   </div>
   <div
     class="prose relative max-w-none prose-pre:my-0 prose-pre:max-h-[20rem]"
-    x-show="open"
+    id='{{ .File.ContentBaseName }}-code'
     style="display: none">
     {{ .Scratch.Set "finalCode" (replace .Content "\n<" "<" 1) }} {{ if
     .Params.forms }} {{ .Scratch.Set "finalCode" (print "<!-- Needs TailwindCSS Forms Plugin github.com/tailwindlabs/tailwindcss-forms -->"

@@ -1,5 +1,4 @@
 <meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <!-- Title Tags -->
@@ -28,10 +27,6 @@
 <meta property="og:image" content="{{ .Site.Params.og_image | absURL }}" />
 <meta name="twitter:image" content="{{ .Site.Params.og_image | absURL }}" />
 <meta name="twitter:image:src" content="{{ .Site.Params.og_image | absURL }}" />
-
-<!-- Favicon Tags -->
-<link rel="shortcut icon" href="/favicon.ico" />
-<link rel="icon" type="image/png" href="/favicon.png" />
 
 <!-- Date Tags -->
 <meta property="og:updated_time" content={{ .Lastmod.Format
@@ -81,6 +76,7 @@
   }
 </script>
 
+<!-- Preload Links -->
 <link rel="preload" href="/main.css" as="style" />
 <link
   rel="preload"
@@ -94,7 +90,41 @@
   as="font"
   type="font/woff2"
   crossorigin />
+<link rel="preconnect" href="https://source.boringavatars.com" crossorigin />
 
 <!-- Links -->
 <link rel="stylesheet" href="/main.css" />
-<script defer src="/main.js"></script>
+
+<!-- Favicon Tags -->
+<link rel="shortcut icon" href="/favicon.ico" />
+
+<script>
+  var toggle = function (elem) {
+    const activeClass = ['text-white', '!bg-gray-700', 'hover:!bg-gray-800']
+    const code = document.getElementById(elem + '-code')
+    const view = document.getElementById(elem + '-view')
+    const toggleButton = document.getElementById(elem + '-toggle')
+
+    if (window.getComputedStyle(code).display === 'none') {
+      view.style.display = 'none'
+      code.style.display = 'block'
+      toggleButton.classList.add(...activeClass)
+    } else {
+      code.style.display = 'none'
+      view.style.display = 'block'
+      toggleButton.classList.remove(...activeClass)
+    }
+  }
+
+  var copy = function (elem) {
+    const activeClass = '!fill-gray-600'
+    const copyRect = document.getElementById(elem + '-copy-rect')
+    navigator.clipboard.writeText(
+      document.getElementById(elem + '-content').innerHTML
+    )
+    copyRect.classList.add(activeClass)
+    setTimeout(function () {
+      copyRect.classList.remove(activeClass)
+    }, 1000)
+  }
+</script>
