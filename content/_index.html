@@ -1,101 +1,74 @@
 ---
 ---
 
-<section class="bg-gradient-to-b from-gray-200 to-white">
-  <div class="mx-auto max-w-[85rem] space-y-5 px-4 pt-6 pb-10">
-    <div class="flex space-x-3">
-      <div class="flex h-8 w-8 shrink-0 rounded-full bg-gray-200">
-        <img
-          src="https://source.boringavatars.com/beam/you"
-          class="select-none rounded-full bg-gray-200"
-          height="32"
-          width="32"
-          alt="You" />
-      </div>
-      <p class="font-alegreya text-lg font-semibold text-gray-800 sm:text-xl">
-        You're not building another Tailwind CSS UI Library are you?
-      </p>
-    </div>
-    <div class="flex items-center space-x-3">
-      <div class="flex h-8 w-8 shrink-0 rounded-full bg-gray-200">
-        <img
-          src="https://source.boringavatars.com/beam/me"
-          class="select-none rounded-full bg-gray-200"
-          height="32"
-          width="32"
-          alt="Me" />
-      </div>
-      <p class="font-alegreya text-lg font-semibold text-gray-800 sm:text-xl">
-        Yeah, wanna fight about it? 🤺
-      </p>
-    </div>
+<section class="bg-gradient-to-b from-orange-50/50">
+  <div class="mx-auto max-w-xl space-y-4 py-24 px-4">
+    <h1
+      class="font-alegreya text-center text-2xl font-bold text-stone-900 sm:text-3xl sm:leading-10">
+      UI Components and Elements made with Tailwind CSS ✨
+    </h1>
+    <p
+      class="font-alegreya text-center text-lg font-medium italic text-stone-500 md:text-xl">
+      Free · Open Source · Accessible · With Figma · Other Buzzwords
+    </p>
   </div>
 </section>
 
 <section class="font-alegreya mx-auto max-w-[85rem] p-4">
-  <p class="mb-2 font-medium italic text-gray-600">Elements</p>
+  <p class="mb-2 font-medium italic text-stone-600">Elements</p>
   <div
     class="grid grid-cols-1 gap-y-px gap-x-px sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
     {{< elementlink link="/avatar">}}
-    <div
-      class="h-8 w-8 rounded-full border border-gray-200 bg-gray-200 transition group-hover:border-gray-300"></div>
+    <img
+      src="https://source.boringavatars.com/beam?colors=F3BD7F"
+      class="h-8 w-8 select-none rounded-full bg-orange-100" />
     {{< /elementlink>}} {{< elementlink link="/avatar-group">}}
-    <div class="flex -space-x-4">
-      <div
-        class="h-8 w-8 rounded-full border border-gray-100 bg-gray-100 transition group-hover:border-gray-200"></div>
-      <div
-        class="h-8 w-8 rounded-full border border-gray-200 bg-gray-200 transition group-hover:border-gray-300"></div>
-      <div
-        class="h-8 w-8 rounded-full border border-gray-300 bg-gray-300 transition group-hover:border-gray-400"></div>
+    <div class="flex -space-x-3">
+      <img
+        src="https://source.boringavatars.com/beam/1?colors=F3BD7F"
+        class="h-8 w-8 select-none rounded-full bg-orange-100 ring-2 ring-white" />
+      <img
+        src="https://source.boringavatars.com/beam/2?colors=F3BD7F"
+        class="h-8 w-8 select-none rounded-full bg-orange-100 ring-2 ring-white" />
+      <img
+        src="https://source.boringavatars.com/beam/3?colors=F3BD7F"
+        class="h-8 w-8 select-none rounded-full bg-orange-100 ring-2 ring-white" />
     </div>
     {{< /elementlink>}} {{< elementlink link="/badge">}}
-    <div
-      class="h-7 w-14 rounded-full border border-gray-200 bg-gray-200 transition group-hover:border-gray-300"></div>
+    <div class="h-6 w-12 rounded-full bg-orange-100"></div>
     {{< /elementlink>}} {{< elementlink link="/breadcrumb">}}
     <div class="flex items-center space-x-3">
-      <div
-        class="h-7 w-12 rounded border border-gray-100 bg-gray-100 transition group-hover:border-gray-200"></div>
-      <div
-        class="h-7 w-0.5 rotate-12 rounded-full border border-gray-200 bg-gray-200 transition group-hover:border-gray-300"></div>
-      <div
-        class="h-7 w-12 rounded border border-gray-200 bg-gray-200 transition group-hover:border-gray-300"></div>
+      <div class="h-6 w-10 rounded bg-orange-100"></div>
+      <div class="h-5 w-0.5 rotate-12 rounded-full bg-orange-300"></div>
+      <div class="h-6 w-10 rounded bg-orange-200"></div>
     </div>
     {{< /elementlink>}} {{< elementlink link="/buttons">}}
-    <div
-      class="h-8 w-16 rounded border border-gray-200 bg-gray-200 transition group-hover:border-gray-300"></div>
+    <div class="h-8 w-16 rounded bg-orange-200"></div>
     {{< /elementlink>}} {{< elementlink link="/button-group">}}
-    <div
-      class="h-8 w-10 rounded-l border border-gray-50 bg-gray-50 transition group-hover:border-gray-100"></div>
-    <div
-      class="-ml-px h-8 w-10 border border-gray-100 bg-gray-100 transition group-hover:border-gray-200"></div>
-    <div
-      class="-ml-px h-8 w-10 rounded-r border border-gray-200 bg-gray-200 transition group-hover:border-gray-300"></div>
+    <div class="h-8 w-12 rounded-l bg-orange-100"></div>
+    <div class="-ml-px h-8 w-12 rounded-r bg-orange-200"></div>
     {{< /elementlink>}} {{< elementlink link="/progress">}}
-    <div
-      class="h-3.5 w-32 overflow-hidden rounded-full bg-gray-100 transition group-hover:bg-gray-200">
-      <div
-        class="h-3.5 w-12 bg-gray-300 transition group-hover:bg-gray-400"></div>
+    <div class="h-3.5 w-32 overflow-hidden rounded-full bg-orange-100">
+      <div class="h-3.5 w-10 bg-orange-300"></div>
     </div>
     {{< /elementlink>}} {{< elementlink link="/spinner">}}
     <svg class="h-8 w-8" viewBox="3 3 18 18">
       <path
-        class="fill-gray-100 transition group-hover:fill-gray-200"
+        class="fill-orange-100"
         d="M12 5C8.13401 5 5 8.13401 5 12C5 15.866 8.13401 19 12 19C15.866 19 19 15.866 19 12C19 8.13401 15.866 5 12 5ZM3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12Z"></path>
       <path
-        class="fill-gray-300 transition group-hover:fill-gray-400"
+        class="fill-orange-300"
         d="M16.9497 7.05015C14.2161 4.31648 9.78392 4.31648 7.05025 7.05015C6.65973 7.44067 6.02656 7.44067 5.63604 7.05015C5.24551 6.65962 5.24551 6.02646 5.63604 5.63593C9.15076 2.12121 14.8492 2.12121 18.364 5.63593C18.7545 6.02646 18.7545 6.65962 18.364 7.05015C17.9734 7.44067 17.3403 7.44067 16.9497 7.05015Z"></path>
     </svg>
     {{< /elementlink>}} {{< elementlink link="/switch">}}
     <div
-      class="flex h-7 w-12 items-center rounded-full border border-gray-200 bg-gray-200 py-1 px-0.5 transition group-hover:border-gray-300">
-      <div
-        class="h-6 w-6 rounded-full border border-gray-200 bg-white transition group-hover:border-gray-300"></div>
+      class="flex h-7 w-12 items-center justify-end rounded-full bg-orange-300 py-1 px-0.5">
+      <div class="h-6 w-6 rounded-full bg-white"></div>
     </div>
     {{< /elementlink>}} {{< elementlink link="/tooltip">}}
-    <div
-      class="relative flex h-8 w-16 items-center rounded bg-gray-200 transition group-hover:bg-gray-300">
+    <div class="relative flex h-8 w-16 items-center rounded bg-orange-200">
       <svg
-        class="absolute -top-0.5 left-1/2 -translate-x-1/2 -translate-y-1/2 fill-gray-200 transition group-hover:fill-gray-300"
+        class="absolute -top-0.5 left-1/2 -translate-x-1/2 -translate-y-1/2 fill-orange-200"
         width="10"
         height="5"
         viewBox="0 0 30 10"
@@ -105,62 +78,46 @@
     </div>
     {{< /elementlink>}}
   </div>
-  <p class="mt-10 mb-2 font-medium italic text-gray-600">Form</p>
+  <p class="mt-10 mb-2 font-medium italic text-stone-600">Form</p>
   <div
     class="grid grid-cols-1 gap-y-px gap-x-px sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
     {{< elementlink link="/checkbox">}}
-    <svg
-      class="h-8 w-8 rounded fill-gray-200 transition group-hover:fill-gray-300"
-      viewBox="0 0 256 256">
+    <svg class="h-8 w-8 fill-orange-300" viewBox="0 0 256 256">
       <path
         d="M208,32H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32Zm-30.5,77.8-58.6,56a8.1,8.1,0,0,1-5.6,2.2,7.9,7.9,0,0,1-5.5-2.2l-29.3-28a8,8,0,1,1,11-11.6l23.8,22.7,53.2-50.7a8,8,0,0,1,11,11.6Z"></path>
     </svg>
     {{< /elementlink>}} {{< elementlink link="/file">}}
-    <svg
-      class="h-8 w-8 rounded fill-gray-200 transition group-hover:fill-gray-300"
-      viewBox="0 0 256 256">
+    <svg class="h-8 w-8 fill-orange-300" viewBox="0 0 256 256">
       <path
         d="M213.6,82.3l-55.9-56-.3-.2-.3-.3-.3-.2-.3-.2c-.1-.1-.2-.1-.2-.2l-.5-.3h-.2l-.5-.3H155l-.7-.3H56A16,16,0,0,0,40,40V216a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V88A7.8,7.8,0,0,0,213.6,82.3Zm-51.9,71.4a8.1,8.1,0,0,1-11.4,0L136,139.3V184a8,8,0,0,1-16,0V139.3l-14.3,14.4a8.1,8.1,0,0,1-11.4-11.4l28-28h.1l.5-.5.3-.2.4-.3.3-.2.3-.2h.4l.3-.2h.4l.4-.2h4.6l.4.2h.4l.3.2h.4l.3.2.3.2.4.3.3.2.5.5h.1l28,28A8.1,8.1,0,0,1,161.7,153.7ZM152,88V43.3L196.7,88Z"></path>
     </svg>
     {{< /elementlink>}} {{< elementlink link="/input">}}
-    <div
-      class="h-6 w-1/2 rounded bg-gray-100 transition group-hover:bg-gray-200"></div>
+    <div class="h-6 w-1/2 rounded bg-orange-100"></div>
     {{< /elementlink>}} {{< elementlink link="/input-group">}}
     <div class="flex -space-x-px">
-      <div
-        class="h-6 w-24 rounded-l bg-gray-100 transition group-hover:bg-gray-200"></div>
-      <div
-        class="h-6 w-8 rounded-r bg-gray-200 transition group-hover:bg-gray-300"></div>
+      <div class="h-6 w-24 rounded-l bg-orange-100"></div>
+      <div class="h-6 w-8 rounded-r bg-orange-200"></div>
     </div>
     {{< /elementlink>}} {{< elementlink link="/radio">}}
-    <div
-      class="grid h-8 w-8 place-items-center rounded-full border border-gray-200 bg-gray-200 transition group-hover:border-gray-300">
-      <div
-        class="h-3 w-3 rounded-full border border-gray-200 bg-white transition group-hover:border-gray-300"></div>
+    <div class="grid h-8 w-8 place-items-center rounded-full bg-orange-300">
+      <div class="h-3 w-3 rounded-full bg-white"></div>
     </div>
     {{< /elementlink>}} {{< elementlink link="/range">}}
     <div
-      class="flex h-2 w-32 items-center justify-center rounded-full bg-gray-100 transition group-hover:bg-gray-200">
-      <div
-        class="h-4 w-4 rounded-full bg-gray-200 transition group-hover:bg-gray-300"></div>
+      class="flex h-2 w-32 items-center justify-center rounded-full bg-orange-100">
+      <div class="h-4 w-4 rounded-full bg-orange-300"></div>
     </div>
     {{< /elementlink>}} {{< elementlink link="/rating">}}
     <svg
-      class="h-8 w-8 shrink-0 fill-gray-200 transition group-hover:fill-gray-300"
+      class="h-8 w-8 shrink-0 fill-orange-300"
       aria-hidden="true"
       viewBox="0 0 256 256">
       <path
         d="M239.2,97.4A16.4,16.4,0,0,0,224.6,86l-59.4-4.1-22-55.5A16.4,16.4,0,0,0,128,16h0a16.4,16.4,0,0,0-15.2,10.4L90.4,82.2,31.4,86A16.5,16.5,0,0,0,16.8,97.4,16.8,16.8,0,0,0,22,115.5l45.4,38.4L53.9,207a18.5,18.5,0,0,0,7,19.6,18,18,0,0,0,20.1.6l46.9-29.7h.2l50.5,31.9a16.1,16.1,0,0,0,8.7,2.6,16.5,16.5,0,0,0,15.8-20.8l-14.3-58.1L234,115.5A16.8,16.8,0,0,0,239.2,97.4Z"></path>
     </svg>
     {{< /elementlink>}} {{< elementlink link="/search">}}
-    <svg
-      class="h-8 w-8 shrink-0 stroke-gray-200 transition group-hover:stroke-gray-300"
-      viewBox="0 0 256 256">
-      <circle
-        cx="116"
-        cy="116"
-        r="84"
-        class="fill-gray-100 transition group-hover:fill-gray-200"></circle>
+    <svg class="h-8 w-8 shrink-0 stroke-orange-300" viewBox="0 0 256 256">
+      <circle cx="116" cy="116" r="84" class="fill-orange-100"></circle>
       <circle
         cx="116"
         cy="116"
@@ -181,9 +138,9 @@
     </svg>
     {{< /elementlink>}} {{< elementlink link="/select">}}
     <div
-      class="grid h-6 w-1/2 place-items-end items-center rounded bg-gray-100 px-2 transition group-hover:bg-gray-200">
+      class="grid h-6 w-1/2 place-items-end items-center rounded bg-orange-100 px-2">
       <svg
-        class="h-2.5 w-2.5 fill-transparent stroke-gray-400"
+        class="h-2.5 w-2.5 fill-transparent stroke-orange-500"
         viewBox="0 0 256 256">
         <polyline
           points="208 96 128 176 48 96"
@@ -193,36 +150,27 @@
       </svg>
     </div>
     {{< /elementlink>}} {{< elementlink link="/textarea">}}
-    <div
-      class="h-12 w-1/2 rounded bg-gray-100 transition group-hover:bg-gray-200"></div>
+    <div class="h-12 w-1/2 rounded bg-orange-100"></div>
     {{< /elementlink>}}
   </div>
-  <p class="mt-10 mb-2 font-medium italic text-gray-600">Marketing</p>
+  <p class="mt-10 mb-2 font-medium italic text-stone-600">Marketing</p>
   <div
     class="grid grid-cols-1 gap-y-px gap-x-px sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
     {{< elementlink link="/header">}}
     <div class="flex w-full items-center justify-between px-4">
-      <div
-        class="h-3 w-6 rounded border border-gray-200 bg-gray-200 transition group-hover:border-gray-300"></div>
+      <div class="h-3 w-6 rounded bg-orange-200"></div>
       <div class="flex space-x-1">
-        <div
-          class="h-3 w-8 rounded border border-gray-100 bg-gray-100 transition group-hover:border-gray-200"></div>
-        <div
-          class="h-3 w-8 rounded border border-gray-200 bg-gray-200 transition group-hover:border-gray-300"></div>
+        <div class="h-3 w-8 rounded bg-orange-100"></div>
+        <div class="h-3 w-8 rounded bg-orange-200"></div>
       </div>
     </div>
     {{< /elementlink>}} {{< elementlink link="/footer">}}
     <div class="flex space-x-2">
-      <div
-        class="h-2.5 w-8 rounded-sm border border-gray-200 bg-gray-200 transition group-hover:border-gray-300"></div>
-      <div
-        class="h-10 w-8 rounded border border-gray-200 bg-gray-200 transition group-hover:border-gray-300"></div>
-      <div
-        class="h-10 w-8 rounded border border-gray-200 bg-gray-200 transition group-hover:border-gray-300"></div>
-      <div
-        class="h-10 w-8 rounded border border-gray-200 bg-gray-200 transition group-hover:border-gray-300"></div>
-      <div
-        class="h-10 w-8 rounded border border-gray-200 bg-gray-200 transition group-hover:border-gray-300"></div>
+      <div class="h-2.5 w-8 rounded-sm bg-orange-100"></div>
+      <div class="h-10 w-8 rounded bg-orange-100"></div>
+      <div class="h-10 w-8 rounded bg-orange-100"></div>
+      <div class="h-10 w-8 rounded bg-orange-100"></div>
+      <div class="h-10 w-8 rounded bg-orange-100"></div>
     </div>
     {{< /elementlink>}}
   </div>

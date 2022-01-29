@@ -7,7 +7,7 @@ enableRobotsTXT = true
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [params]
-  description = "Perfect UI Components and Templates. Made with TailwindCSS. Open Source. Fully Responsive and Accessible. Free."
+  description = "UI Components and Elements made with Tailwind CSS. Free. Open Source. Accessible. With Figma Kit."
   author = "Praveen Juge"
   github = "https://github.com/praveenjuge/myna"
   og_image = "/og.png"

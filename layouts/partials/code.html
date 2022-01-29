@@ -7,12 +7,6 @@
       {{ .File.TranslationBaseName | humanize | title }}
     </a>
     <div class="flex items-center">
-      <div
-        style="display: none"
-        class="font-alegreya text-sm font-medium text-gray-500 flex items-center">
-        <span>Last edited on {{ .Lastmod.Format "January 2, 2006" }}</span>
-        <div aria-hidden="true" class="w-px bg-gray-200 h-4 ml-2 mr-1"></div>
-      </div>
       <a
         href=https://github.com/praveenjuge/myna/blob/main/content/{{ .File.Path }}
         target="_blank"
