@@ -29,26 +29,13 @@
 <meta name="twitter:image:src" content="{{ .Site.Params.og_image | absURL }}" />
 
 <!-- Date Tags -->
-<meta property="og:updated_time" content={{ .Lastmod.Format
-"2006-01-02T15:04:05Z0700" | safeHTML }} />
+<meta property="og:updated_time" content={{ .Lastmod.Format "2006-01-02T15:04:05Z0700" | safeHTML }} />
 
 <!-- Sitemap & RSS Feed Tags -->
-<link
-  rel="sitemap"
-  type="application/xml"
-  title="Sitemap"
-  href='{{ "sitemap.xml" | absURL }}' />
+<link rel="sitemap" type="application/xml" title="Sitemap" href='{{ "sitemap.xml" | absURL }}' />
 {{ with .OutputFormats.Get "RSS" }}
-<link
-  href="{{ .Permalink }}"
-  rel="alternate"
-  type="application/rss+xml"
-  title="{{ $.Site.Title }}" />
-<link
-  href="{{ .Permalink }}"
-  rel="feed"
-  type="application/rss+xml"
-  title="{{ $.Site.Title }}" />
+<link href="{{ .Permalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
+<link href="{{ .Permalink }}" rel="feed" type="application/rss+xml" title="{{ $.Site.Title }}" />
 {{ end }}
 
 <!-- Search Engine Crawler Tags -->
@@ -103,7 +90,7 @@
 
 <script>
   var toggle = function (elem) {
-    const active = ['text-white', '!bg-gray-700', 'hover:!bg-gray-800']
+    const active = ['!text-white', '!bg-gray-700', 'hover:!bg-gray-800']
     const code = document.getElementById(elem + '-code')
     const view = document.getElementById(elem + '-view')
     const toggler = document.getElementById(elem + '-toggle')
@@ -123,9 +110,7 @@
     const active = '!fill-gray-600'
     const copyRect = document.getElementById(elem + '-copy-rect')
     copyRect.classList.add(active)
-    navigator.clipboard.writeText(
-      document.getElementById(elem + '-content').innerHTML
-    )
+    navigator.clipboard.writeText(document.getElementById(elem + '-content').innerHTML)
     setTimeout(function () {
       copyRect.classList.remove(active)
     }, 1000)

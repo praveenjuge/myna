@@ -1,6 +1,4 @@
 {{ define "main" }}
 
-<h1 class="font-alegreya mt-4 mb-8 text-3xl font-bold tracking-tight">
-  {{ .Title | humanize | title }}
-</h1>
+<h1 class="font-alegreya mt-4 mb-8 text-3xl font-bold tracking-tight">{{ .Title | humanize | title }}</h1>
 {{ range .Pages.ByWeight }} {{ partial "code" . }} {{ end }} {{end}}

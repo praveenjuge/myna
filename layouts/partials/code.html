@@ -135,11 +135,11 @@
   </div>
   <div class="relative w-full overflow-hidden rounded border" id='{{ .File.ContentBaseName }}-view'>
     {{ if .Params.headerPadding }}
-    <div class="h-16 bg-gray-50" aria-hidden="true"></div>
+    <div class="h-16 bg-gray-100" aria-hidden="true"></div>
     {{ end }}
     <div class="{{ .Params.wrapper }}" id='{{ .File.ContentBaseName }}-content'>{{ replace .Content "\n<" "<" 1 | safeHTML }}</div>
     {{ if .Params.footerPadding }}
-    <div class="h-24 bg-gray-50" aria-hidden="true"></div>
+    <div class="h-24 bg-gray-100" aria-hidden="true"></div>
     {{ end }}
   </div>
   <div
