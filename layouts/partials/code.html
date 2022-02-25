@@ -139,7 +139,9 @@
     {{ end }}
     <div class="{{ .Params.wrapper }}" id='{{ .File.ContentBaseName }}-content'>{{ replace .Content "\n<" "<" 1 | safeHTML }}</div>
     {{ if .Params.footerPadding }}
-    <div class="h-24 bg-gray-100" aria-hidden="true"></div>
+    <div class="mx-auto max-w-7xl px-4 my-6" aria-hidden="true">
+      <div class="rounded border-2 border-dashed border-gray-200 p-6"></div>
+    </div>
     {{ end }}
   </div>
   <div

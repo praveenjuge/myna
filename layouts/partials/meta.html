@@ -1,12 +1,30 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+{{ .Scratch.Set "title" .Site.Title }}
+
+{{ if eq .Kind "home" }}
+  {{ .Scratch.Set "title" .Site.Title }}
+{{ end }} 
+
+{{ if .IsSection }}
+  {{ .Scratch.Set "title" (.LinkTitle | humanize | title) }}
+  {{ .Scratch.Add "title" " | " }}
+  {{ .Scratch.Add "title" .Site.Title }}
+{{ end }} 
+
+{{ if .IsPage }}
+  {{ .Scratch.Set "title" (.File.TranslationBaseName | humanize | title) }}
+  {{ .Scratch.Add "title" " | " }}
+  {{ .Scratch.Add "title" .Site.Title }}
+{{ end }} 
+
 <!-- Title Tags -->
-<title itemprop="name">{{ .Site.Title }}</title>
-<meta property="og:title" content="{{ .Site.Title }}" />
-<meta name="twitter:title" content="{{ .Site.Title }}" />
-<meta itemprop="name" content="{{ .Site.Title }}" />
-<meta name="application-name" content="{{ .Site.Title }}" />
+<title itemprop="name">{{ .Scratch.Get "title" }}</title>
+<meta property="og:title" content={{ .Scratch.Get "title" }} />
+<meta name="twitter:title" content={{ .Scratch.Get "title" }} />
+<meta itemprop="name" content={{ .Scratch.Get "title" }} />
+<meta name="application-name" content={{ .Scratch.Get "title" }} />
 <meta property="og:site_name" content="{{ .Site.Title }}" />
 
 <!-- Description Tags -->
