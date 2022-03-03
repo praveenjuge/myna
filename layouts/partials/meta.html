@@ -105,32 +105,3 @@
   rel="icon"
   href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3Ctext%20x='0'%20y='14'%3E🐦%3C/text%3E%3C/svg%3E"
   type="image/svg+xml" />
-
-<script>
-  var toggle = function (elem) {
-    const active = ['!text-white', '!bg-gray-700', 'hover:!bg-gray-800']
-    const code = document.getElementById(elem + '-code')
-    const view = document.getElementById(elem + '-view')
-    const toggler = document.getElementById(elem + '-toggle')
-
-    if (window.getComputedStyle(code).display === 'none') {
-      view.style.display = 'none'
-      code.style.display = 'block'
-      toggler.classList.add(...active)
-    } else {
-      code.style.display = 'none'
-      view.style.display = 'block'
-      toggler.classList.remove(...active)
-    }
-  }
-
-  var copy = function (elem) {
-    const active = '!fill-gray-600'
-    const copyRect = document.getElementById(elem + '-copy-rect')
-    copyRect.classList.add(active)
-    navigator.clipboard.writeText(document.getElementById(elem + '-content').innerHTML)
-    setTimeout(function () {
-      copyRect.classList.remove(active)
-    }, 1000)
-  }
-</script>

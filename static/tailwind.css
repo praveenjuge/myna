@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer base {
+  summary::-webkit-details-marker {
+    display: none;
+  }
   .font-alegreya {
     font-family: Alegreya, ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
   }
