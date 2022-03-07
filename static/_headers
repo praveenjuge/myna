@@ -1,0 +1,9 @@
+/*
+  X-Frame-Options: DENY
+  Referrer-Policy: origin
+  X-DNS-Prefetch-Control: on
+  X-XSS-Protection: 1; mode=block
+  X-Content-Type-Options: nosniff
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  Content-Security-Policy: default-src 'self'; script-src 'self' localhost:1313; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' https://source.boringavatars.com data:; connect-src 'self'; frame-src 'self';
