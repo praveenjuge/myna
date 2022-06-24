@@ -10,5 +10,5 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
   description = "UI Components and Elements made with Tailwind CSS. Free. Open Source. Accessible. With Figma Kit."
   author = "Praveen Juge"
   github = "https://github.com/praveenjuge/myna"
-  og_image = "/og.png"
+  og_image = "/og.jpg"
   twitter = "@praveenjuge"
