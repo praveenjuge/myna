@@ -1,17 +1,19 @@
 {
   "scripts": {
-    "production": "cross-env NODE_ENV=production npm run tailwind:build && hugo",
-    "start": "cross-env NODE_ENV=development concurrently \"npm run tailwind:watch\" \"hugo server\"",
-    "tailwind:build": "./node_modules/tailwindcss/lib/cli.js -i ./static/tailwind.css -o ./static/main.css --content ./content/**/*.html,./layouts/**/*.html --minify",
-    "tailwind:watch": "./node_modules/tailwindcss/lib/cli.js -i ./static/tailwind.css -o ./static/main.css --content ./content/**/*.html,./layouts/**/*.html -w"
+    "build": "npm-run-all build:*",
+    "build:css": "NODE_ENV=production ./node_modules/tailwindcss/lib/cli.js -i ./static/tailwind.css -o ./static/main.css --minify",
+    "build:hugo": "hugo --minify",
+    "deploy": "npm run build && netlify deploy --prod",
+    "dev": "npm-run-all --parallel dev:*",
+    "dev:css": "NODE_ENV=development ./node_modules/tailwindcss/lib/cli.js -i ./static/tailwind.css -o ./static/main.css -w",
+    "dev:hugo": "hugo server"
   },
   "dependencies": {
-    "@tailwindcss/forms": "^0.5.0",
+    "@tailwindcss/forms": "^0.5.2",
     "@tailwindcss/typography": "^0.5.2",
-    "concurrently": "^7.0.0",
-    "cross-env": "^7.0.3",
-    "prettier": "2.5.1",
-    "prettier-plugin-tailwindcss": "^0.1.8",
-    "tailwindcss": "^3.0.23"
+    "prettier": "2.7.1",
+    "prettier-plugin-tailwindcss": "^0.1.11",
+    "npm-run-all": "^4.1.5",
+    "tailwindcss": "^3.1.4"
   }
 }

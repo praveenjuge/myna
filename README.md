@@ -33,10 +33,10 @@ npm start
 
 Open [`http://localhost:1313`](http://localhost:1313) in your browser.
 
-| Scripts              | Description                                     |
-| -------------------- | ----------------------------------------------- |
-| `npm start`          | Starts a local Hugo server and Tailwind Watcher |
-| `npm run production` | For generating production docs files            |
+| Scripts         | Description                                     |
+| --------------- | ----------------------------------------------- |
+| `npm run dev`   | Starts a local Hugo server and Tailwind Watcher |
+| `npm run build` | For generating production docs files            |
 
 ## License
 
