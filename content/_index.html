@@ -1,12 +1,13 @@
 ---
 ---
 
-<section class="font-alegreya">
-  <div class="mx-auto flex max-w-xl flex-col items-center justify-center space-y-4 py-24 px-4">
-    <h1 class="text-center text-2xl font-bold text-stone-900 sm:text-3xl sm:leading-10">
+<section
+  class="font-alegreya relative mb-10 overflow-hidden border-b border-slate-200 bg-gradient-to-b from-white to-slate-100 pt-32 pb-48">
+  <div class="relative z-10 mx-auto flex max-w-xl animate-scale-0.5 flex-col items-center justify-center space-y-4 p-4">
+    <h1 class="5 text-center text-2xl font-bold text-slate-900 sm:text-3xl sm:leading-10">
       UI Components and Elements made with Tailwind CSS ✨
     </h1>
-    <p class="text-center text-lg font-medium italic text-stone-500 md:text-xl">
+    <p class="text-center text-lg font-medium italic text-slate-500 md:text-xl">
       Free · Open Source · Accessible · With Figma · Other Buzzwords
     </p>
     <div class="flex flex-wrap items-center space-x-2 pt-3">
@@ -15,7 +16,7 @@
         target="_blank"
         rel="noopener noreferrer"
         href="https://github.com/sponsors/praveenjuge"
-        class="flex select-none appearance-none items-center justify-center space-x-1.5 rounded-full bg-stone-900 px-4 py-2.5 text-base font-semibold text-gray-50 transition hover:bg-black focus:outline-none focus:ring focus:ring-stone-400">
+        class="flex select-none appearance-none items-center justify-center space-x-1.5 rounded-full bg-slate-900 px-5 py-2.5 text-base font-semibold text-slate-50 transition hover:bg-black focus:outline-none focus:ring focus:ring-slate-400">
         <svg aria-hidden="true" class="flex h-5 w-5 shrink-0" viewBox="0 0 24 24">
           <path
             fill="currentcolor"
@@ -28,7 +29,7 @@
         target="_blank"
         rel="noopener noreferrer"
         href="https://twitter.com/praveenjuge"
-        class="flex select-none appearance-none items-center justify-center space-x-1.5 rounded-full bg-sky-500 px-4 py-2.5 text-base font-semibold text-gray-50 transition hover:bg-sky-600 focus:outline-none focus:ring focus:ring-sky-300">
+        class="flex select-none appearance-none items-center justify-center space-x-1.5 rounded-full bg-sky-500 px-5 py-2.5 text-base font-semibold text-slate-50 transition hover:bg-sky-600 focus:outline-none focus:ring focus:ring-sky-300">
         <svg aria-hidden="true" class="flex h-4 w-4 shrink-0" viewBox="0 0 24 24">
           <path
             fill="currentcolor"
@@ -38,61 +39,1196 @@
       </a>
     </div>
   </div>
+
+  <div
+    aria-hidden="true"
+    class="absolute inset-y-0 -left-96 -right-96 mx-auto max-w-[100rem] select-none font-medium md:-left-80 md:-right-80 lg:-left-40 lg:-right-40 xl:left-0 xl:right-0">
+    <div class="absolute top-4 -left-16 w-96 origin-right animate-scale-2">
+      <div class="relative z-0 flex w-full -space-x-px">
+        <input
+          id="copy"
+          type="text"
+          value="git@github.com:praveenjuge/myna.git"
+          readonly=""
+          class="block w-full select-none rounded-l border-slate-200 text-sm transition focus:z-10 focus:border-blue-600 focus:ring-blue-600 disabled:cursor-not-allowed disabled:bg-slate-200 disabled:opacity-75" />
+        <button
+          type="button"
+          class="inline-flex w-auto cursor-pointer select-none appearance-none items-center justify-center space-x-1 rounded-r border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-800 transition hover:border-slate-300 hover:bg-slate-100 focus:z-10 focus:border-slate-300 focus:outline-none focus:ring-2 focus:ring-slate-300">
+          <svg class="h-4 w-4 stroke-slate-500" viewBox="0 0 256 256">
+            <polyline
+              points="168 168 216 168 216 40 88 40 88 88"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="24"></polyline>
+            <rect
+              x="40"
+              y="88"
+              width="128"
+              height="128"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="24"></rect>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="absolute top-20 left-10 w-80 origin-right animate-scale-2 rounded border border-slate-200 bg-white p-4">
+      <div class="mb-3 flex items-center justify-between">
+        <p class="text-sm text-slate-700">Dimensions</p>
+        <button type="button" class="group ml-1 -mr-0.5 shrink-0 rounded-full">
+          <svg class="h-3 w-3 stroke-slate-600 group-hover:stroke-black" viewBox="0 0 256 256">
+            <line
+              x1="200"
+              y1="56"
+              x2="56"
+              y2="200"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="26"></line>
+            <line
+              x1="200"
+              y1="200"
+              x2="56"
+              y2="56"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="26"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="grid grid-cols-2 gap-2">
+        <input
+          type="text"
+          placeholder="Height"
+          class="rounded border border-slate-200 p-2 text-sm placeholder:text-slate-400" />
+        <input
+          type="text"
+          placeholder="Width"
+          class="rounded border border-slate-200 p-2 text-sm placeholder:text-slate-400" />
+        <input
+          type="text"
+          placeholder="Max Height"
+          class="rounded border border-slate-200 p-2 text-sm placeholder:text-slate-400" />
+        <input
+          type="text"
+          placeholder="Max Width"
+          class="rounded border border-slate-200 p-2 text-sm placeholder:text-slate-400" />
+      </div>
+    </div>
+
+    <div class="absolute top-6 left-96 origin-right animate-scale-0.5 rounded border border-slate-200 bg-white p-4">
+      <svg width="116" height="29" viewBox="0 0 116 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M71.7969 14.763C71.7969 18.4222 70.3432 21.9316 67.756 24.519C65.1685 27.1063 61.6591 28.56 58 28.56C54.3408 28.56 50.8315 27.1063 48.2441 24.519C45.6567 21.9316 44.2031 18.4222 44.2031 14.763C44.2031 11.1039 45.6567 7.59458 48.2441 5.00716C50.8315 2.41973 54.3408 0.966125 58 0.966125C61.6591 0.966125 65.1685 2.41973 67.756 5.00716C70.3432 7.59458 71.7969 11.1039 71.7969 14.763Z"
+          fill="url(#paint0_linear_106_97)" />
+        <g filter="url(#filter0_d_106_97)">
+          <path
+            d="M53.0892 24.4463C53.0892 25.4341 55.2868 25.277 58 25.277C60.7115 25.277 62.9108 25.4341 62.9108 24.4463C62.9108 23.2564 60.7115 22.48 58 22.48C55.2868 22.48 53.0892 23.2564 53.0892 24.4463Z"
+            fill="#0F172A" />
+        </g>
+        <path
+          d="M53.0892 24.4463C53.0892 25.4341 55.2868 25.277 58 25.277C60.7115 25.277 62.9108 25.4341 62.9108 24.4463C62.9108 23.2564 60.7115 22.48 58 22.48C55.2868 22.48 53.0892 23.2564 53.0892 24.4463Z"
+          fill="url(#paint1_linear_106_97)" />
+        <path
+          d="M50.2832 18.0387C50.2832 16.6158 51.1982 15.4646 52.324 15.4646C53.4516 15.4646 54.3649 16.6158 54.3649 18.0387C54.3649 18.6305 54.2067 19.1774 53.9363 19.6109C53.8099 19.8105 53.6166 19.9519 53.3955 20.0066C53.1404 20.0714 52.7611 20.1415 52.324 20.1415C51.887 20.1415 51.506 20.0714 51.2526 20.0066C51.0312 19.9525 50.8378 19.8109 50.7118 19.6109C50.4271 19.1423 50.2781 18.5958 50.2832 18.0387ZM61.1676 18.0387C61.1676 16.6158 62.0809 15.4646 63.2084 15.4646C64.3343 15.4646 65.2492 16.6158 65.2492 18.0387C65.2492 18.6305 65.0894 19.1774 64.8207 19.6109C64.6947 19.8109 64.5013 19.9525 64.2799 20.0066C63.9288 20.0955 63.5693 20.1406 63.2084 20.1415C62.7713 20.1415 62.3921 20.0714 62.137 20.0066C61.9154 19.9519 61.7215 19.8105 61.5945 19.6109C61.311 19.1417 61.1627 18.5954 61.1676 18.0387Z"
+          fill="url(#paint2_linear_106_97)" />
+        <g filter="url(#filter1_i_106_97)">
+          <path
+            d="M50.2832 18.0387C50.2832 16.6158 51.1982 15.4646 52.324 15.4646C53.4516 15.4646 54.3649 16.6158 54.3649 18.0387C54.3649 18.6305 54.2067 19.1774 53.9363 19.6109C53.8099 19.8105 53.6166 19.9519 53.3955 20.0066C53.1404 20.0714 52.7611 20.1415 52.324 20.1415C51.887 20.1415 51.506 20.0714 51.2526 20.0066C51.0312 19.9525 50.8378 19.8109 50.7118 19.6109C50.4271 19.1423 50.2781 18.5958 50.2832 18.0387ZM61.1676 18.0387C61.1676 16.6158 62.0809 15.4646 63.2084 15.4646C64.3343 15.4646 65.2492 16.6158 65.2492 18.0387C65.2492 18.6305 65.0894 19.1774 64.8207 19.6109C64.6947 19.8109 64.5013 19.9525 64.2799 20.0066C63.9288 20.0955 63.5693 20.1406 63.2084 20.1415C62.7713 20.1415 62.3921 20.0714 62.137 20.0066C61.9154 19.9519 61.7215 19.8105 61.5945 19.6109C61.311 19.1417 61.1627 18.5954 61.1676 18.0387Z"
+            fill="#0F172A" />
+        </g>
+        <path
+          d="M52.5545 17.1067C52.5629 17.1439 52.5669 17.1818 52.5665 17.2198C52.5665 17.5401 52.2651 17.8031 51.8916 17.8031C51.5199 17.8031 51.2185 17.5401 51.2185 17.2198C51.2185 17.0876 51.2699 16.9649 51.3555 16.8677C51.7392 16.9521 52.1417 17.0334 52.5545 17.1067ZM62.7052 17.8031C62.3438 17.8031 62.0492 17.5593 62.0321 17.2485C62.4757 17.188 62.9159 17.1131 63.3442 17.0318C63.3678 17.0926 63.3794 17.1568 63.3784 17.2214C63.3784 17.5401 63.0787 17.8031 62.7052 17.8031Z"
+          fill="#64748B" />
+        <g filter="url(#filter2_d_106_97)">
+          <path
+            d="M59.467 14.1781C59.467 13.3962 59.7442 13.1262 60.2239 13.1262C60.7001 13.1262 60.928 13.6101 61.0845 14.9952C63.003 14.9952 66.2516 14.0589 66.5645 14.0589C66.8673 14.0589 67.0357 14.2079 67.1037 14.527C67.1632 14.8041 67.0646 15.0671 66.7278 15.2284C65.6716 15.7316 62.5727 16.8677 59.9517 16.8677C59.666 16.8677 59.467 16.7169 59.467 16.34V14.1781ZM54.4478 14.9952C54.6043 13.6101 54.8322 13.1262 55.3085 13.1262C55.7881 13.1262 56.0653 13.3962 56.0653 14.1781V16.34C56.0653 16.7169 55.8663 16.8677 55.5806 16.8677C52.9596 16.8677 49.8607 15.7316 48.8045 15.2284C48.4677 15.0671 48.3691 14.8041 48.4286 14.527C48.4984 14.2079 48.6667 14.0589 48.9678 14.0589C49.2807 14.0589 52.5293 14.9952 54.4478 14.9952Z"
+            fill="#0F172A" />
+        </g>
+        <path
+          d="M59.467 14.1781C59.467 13.3962 59.7442 13.1262 60.2239 13.1262C60.7001 13.1262 60.928 13.6101 61.0845 14.9952C63.003 14.9952 66.2516 14.0589 66.5645 14.0589C66.8673 14.0589 67.0357 14.2079 67.1037 14.527C67.1632 14.8041 67.0646 15.0671 66.7278 15.2284C65.6716 15.7316 62.5727 16.8677 59.9517 16.8677C59.666 16.8677 59.467 16.7169 59.467 16.34V14.1781ZM54.4478 14.9952C54.6043 13.6101 54.8322 13.1262 55.3085 13.1262C55.7881 13.1262 56.0653 13.3962 56.0653 14.1781V16.34C56.0653 16.7169 55.8663 16.8677 55.5806 16.8677C52.9596 16.8677 49.8607 15.7316 48.8045 15.2284C48.4677 15.0671 48.3691 14.8041 48.4286 14.527C48.4984 14.2079 48.6667 14.0589 48.9678 14.0589C49.2807 14.0589 52.5293 14.9952 54.4478 14.9952Z"
+          fill="url(#paint3_linear_106_97)" />
+        <path
+          d="M27.3662 14.763C27.3662 18.4222 25.9371 21.9316 23.3937 24.519C20.8501 27.1063 17.4002 28.56 13.8031 28.56C10.2059 28.56 6.75611 27.1063 4.21254 24.519C1.66896 21.9316 0.239998 18.4222 0.239998 14.763C0.239998 11.1039 1.66896 7.59458 4.21254 5.00716C6.75611 2.41973 10.2059 0.966125 13.8031 0.966125C17.4002 0.966125 20.8501 2.41973 23.3937 5.00716C25.9371 7.59458 27.3662 11.1039 27.3662 14.763Z"
+          fill="url(#paint4_linear_106_97)" />
+        <path
+          d="M9.62593 19.9495C9.34591 23.1134 10.9126 25.2862 13.8031 25.2862C16.6919 25.2862 18.2603 23.1134 17.9803 19.9495C17.702 16.7838 16.0042 14.9969 13.8031 14.9969C11.602 14.9969 9.90417 16.7838 9.62593 19.9495Z"
+          fill="url(#paint5_linear_106_97)" />
+        <path
+          d="M5.85231 10.5539C5.85231 9.13396 6.81093 7.98157 7.9959 7.98157C9.18088 7.98157 10.1395 9.13396 10.1395 10.5539C10.1395 11.9755 9.18088 13.1262 7.9959 13.1262C6.81093 13.1262 5.85231 11.9755 5.85231 10.5539ZM16.999 10.5539C16.999 9.13396 17.9593 7.98157 19.1426 7.98157C20.3275 7.98157 21.2862 9.13396 21.2862 10.5539C21.2862 11.9755 20.3275 13.1262 19.1426 13.1262C17.9593 13.1262 16.999 11.9755 16.999 10.5539Z"
+          fill="url(#paint6_linear_106_97)" />
+        <g filter="url(#filter3_i_106_97)">
+          <path
+            d="M5.85231 10.5539C5.85231 9.13396 6.81093 7.98157 7.9959 7.98157C9.18088 7.98157 10.1395 9.13396 10.1395 10.5539C10.1395 11.9755 9.18088 13.1262 7.9959 13.1262C6.81093 13.1262 5.85231 11.9755 5.85231 10.5539ZM16.999 10.5539C16.999 9.13396 17.9593 7.98157 19.1426 7.98157C20.3275 7.98157 21.2862 9.13396 21.2862 10.5539C21.2862 11.9755 20.3275 13.1262 19.1426 13.1262C17.9593 13.1262 16.999 11.9755 16.999 10.5539Z"
+            fill="#0F172A" />
+        </g>
+        <path
+          d="M7.56704 8.93186C7.88488 9.01434 8.06259 9.42675 7.96348 9.85291C7.86608 10.281 7.52944 10.5599 7.2116 10.4774C6.89376 10.3949 6.71604 9.98252 6.81516 9.5544C6.91256 9.13021 7.2492 8.84741 7.56704 8.93186ZM18.9444 9.05558C19.2964 9.14788 19.4947 9.60546 19.3853 10.0768C19.2759 10.554 18.9034 10.8623 18.5497 10.772C18.1977 10.6817 17.9994 10.2221 18.1088 9.74882C18.2165 9.27357 18.5907 8.96328 18.9461 9.05558H18.9444Z"
+          fill="#64748B" />
+        <g filter="url(#filter4_d_106_97)">
+          <path
+            d="M18.9808 4.25146C19.0686 4.24366 19.1563 4.24054 19.2458 4.24054C20.0676 4.24054 20.9165 4.55876 21.5612 5.11721C21.6775 5.21964 21.7464 5.35973 21.7533 5.50807C21.7602 5.65642 21.7047 5.80147 21.5983 5.91277C21.547 5.96736 21.4841 6.01178 21.4137 6.04336C21.3433 6.07493 21.2667 6.09301 21.1884 6.0965C21.1103 6.1 21.0321 6.08884 20.9587 6.0637C20.8853 6.03857 20.8181 5.99996 20.7613 5.95021C20.2972 5.54619 19.6542 5.32624 19.0871 5.3746C18.8905 5.3882 18.6993 5.44149 18.5273 5.53069C18.3554 5.6199 18.2065 5.74287 18.0914 5.89094C18.0452 5.94896 17.9868 5.99785 17.9198 6.03471C17.8528 6.07157 17.7785 6.09566 17.7014 6.10555C17.6241 6.11542 17.5455 6.11092 17.4702 6.09227C17.3949 6.07363 17.3244 6.04125 17.2628 5.99701C17.1367 5.90444 17.0544 5.77023 17.0333 5.62269C17.0122 5.47514 17.054 5.32579 17.1497 5.20613C17.3623 4.9343 17.6361 4.70822 17.9522 4.54343C18.2683 4.37864 18.6191 4.27904 18.9808 4.25146ZM6.04496 5.11721C6.67069 4.56717 7.49704 4.2543 8.36042 4.24054C8.76831 4.23236 9.17225 4.31597 9.53739 4.4842C9.90255 4.6524 10.218 4.90017 10.4565 5.20613C10.552 5.32573 10.5938 5.47486 10.573 5.62229C10.5522 5.76971 10.4706 5.90399 10.3451 5.99701C10.2834 6.04128 10.2128 6.07371 10.1373 6.09237C10.0619 6.11103 9.98313 6.11555 9.90575 6.10566C9.82839 6.09578 9.75393 6.0717 9.6868 6.03481C9.61965 5.99793 9.56115 5.94901 9.51478 5.89094C9.39961 5.74293 9.25079 5.62002 9.07879 5.53083C8.90678 5.44163 8.71572 5.38831 8.51906 5.3746C7.9537 5.32624 7.30901 5.54619 6.84491 5.95021C6.78805 5.99996 6.7209 6.03857 6.64749 6.0637C6.57408 6.08884 6.49592 6.1 6.41773 6.0965C6.33954 6.09301 6.26291 6.07493 6.19246 6.04336C6.12202 6.01178 6.05922 5.96736 6.00783 5.91277C5.90151 5.80147 5.84597 5.65642 5.85289 5.50807C5.85983 5.35973 5.92867 5.21964 6.04496 5.11721Z"
+            fill="#0F172A" />
+        </g>
+        <path
+          d="M18.9808 4.25146C19.0686 4.24366 19.1563 4.24054 19.2458 4.24054C20.0676 4.24054 20.9165 4.55876 21.5612 5.11721C21.6775 5.21964 21.7464 5.35973 21.7533 5.50807C21.7602 5.65642 21.7047 5.80147 21.5983 5.91277C21.547 5.96736 21.4841 6.01178 21.4137 6.04336C21.3433 6.07493 21.2667 6.09301 21.1884 6.0965C21.1103 6.1 21.0321 6.08884 20.9587 6.0637C20.8853 6.03857 20.8181 5.99996 20.7613 5.95021C20.2972 5.54619 19.6542 5.32624 19.0871 5.3746C18.8905 5.3882 18.6993 5.44149 18.5273 5.53069C18.3554 5.6199 18.2065 5.74287 18.0914 5.89094C18.0452 5.94896 17.9868 5.99785 17.9198 6.03471C17.8528 6.07157 17.7785 6.09566 17.7014 6.10555C17.6241 6.11542 17.5455 6.11092 17.4702 6.09227C17.3949 6.07363 17.3244 6.04125 17.2628 5.99701C17.1367 5.90444 17.0544 5.77023 17.0333 5.62269C17.0122 5.47514 17.054 5.32579 17.1497 5.20613C17.3623 4.9343 17.6361 4.70822 17.9522 4.54343C18.2683 4.37864 18.6191 4.27904 18.9808 4.25146ZM6.04496 5.11721C6.67069 4.56717 7.49704 4.2543 8.36042 4.24054C8.76831 4.23236 9.17225 4.31597 9.53739 4.4842C9.90255 4.6524 10.218 4.90017 10.4565 5.20613C10.552 5.32573 10.5938 5.47486 10.573 5.62229C10.5522 5.76971 10.4706 5.90399 10.3451 5.99701C10.2834 6.04128 10.2128 6.07371 10.1373 6.09237C10.0619 6.11103 9.98313 6.11555 9.90575 6.10566C9.82839 6.09578 9.75393 6.0717 9.6868 6.03481C9.61965 5.99793 9.56115 5.94901 9.51478 5.89094C9.39961 5.74293 9.25079 5.62002 9.07879 5.53083C8.90678 5.44163 8.71572 5.38831 8.51906 5.3746C7.9537 5.32624 7.30901 5.54619 6.84491 5.95021C6.78805 5.99996 6.7209 6.03857 6.64749 6.0637C6.57408 6.08884 6.49592 6.1 6.41773 6.0965C6.33954 6.09301 6.26291 6.07493 6.19246 6.04336C6.12202 6.01178 6.05922 5.96736 6.00783 5.91277C5.90151 5.80147 5.84597 5.65642 5.85289 5.50807C5.85983 5.35973 5.92867 5.21964 6.04496 5.11721Z"
+          fill="url(#paint7_linear_106_97)" />
+        <path
+          d="M101.963 0.966125C98.3039 0.966125 94.7946 2.41973 92.2072 5.00716C89.6198 7.59458 88.1662 11.1039 88.1662 14.763C88.1662 18.4222 89.6198 21.9316 92.2072 24.519C94.7946 27.1063 98.3039 28.56 101.963 28.56C105.622 28.56 109.132 27.1063 111.719 24.519C114.306 21.9316 115.76 18.4222 115.76 14.763C115.76 11.1039 114.306 7.59458 111.719 5.00716C109.132 2.41973 105.622 0.966125 101.963 0.966125Z"
+          fill="url(#paint8_linear_106_97)" />
+        <path
+          d="M106.242 7.98157C102.439 7.98157 101.963 11.1014 101.963 11.1014C101.963 11.1014 101.488 7.98157 97.6845 7.98157C94.026 7.98157 92.9599 11.7821 93.4064 13.8141C94.5832 19.1848 101.963 22.9477 101.963 22.9477C101.963 22.9477 109.344 19.1848 110.52 13.8141C110.965 11.7821 109.897 7.98157 106.242 7.98157Z"
+          fill="white" />
+        <defs>
+          <filter
+            id="filter0_d_106_97"
+            x="52.0892"
+            y="22.48"
+            width="11.8215"
+            height="4.80615"
+            filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feColorMatrix
+              in="SourceAlpha"
+              type="matrix"
+              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              result="hardAlpha" />
+            <feOffset dy="1" />
+            <feGaussianBlur stdDeviation="0.5" />
+            <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.509681 0 0 0 0 0 0 0 0 0.371207 0" />
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_106_97" />
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_106_97" result="shape" />
+          </filter>
+          <filter
+            id="filter1_i_106_97"
+            x="50.2831"
+            y="15.4646"
+            width="14.9662"
+            height="4.67694"
+            filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+            <feColorMatrix
+              in="SourceAlpha"
+              type="matrix"
+              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              result="hardAlpha" />
+            <feOffset />
+            <feGaussianBlur stdDeviation="0.5" />
+            <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+            <feColorMatrix type="matrix" values="0 0 0 0 0.0387428 0 0 0 0 0.0406183 0 0 0 0 0.0875053 0 0 0 1 0" />
+            <feBlend mode="normal" in2="shape" result="effect1_innerShadow_106_97" />
+          </filter>
+          <filter
+            id="filter2_d_106_97"
+            x="48.3123"
+            y="13.1262"
+            width="18.9077"
+            height="4.44152"
+            filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feColorMatrix
+              in="SourceAlpha"
+              type="matrix"
+              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              result="hardAlpha" />
+            <feOffset dy="0.6" />
+            <feGaussianBlur stdDeviation="0.05" />
+            <feColorMatrix type="matrix" values="0 0 0 0 0.565875 0 0 0 0 0.151272 0 0 0 0 0 0 0 0 0.15024 0" />
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_106_97" />
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_106_97" result="shape" />
+          </filter>
+          <filter
+            id="filter3_i_106_97"
+            x="5.85231"
+            y="7.98157"
+            width="15.4338"
+            height="5.14459"
+            filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+            <feColorMatrix
+              in="SourceAlpha"
+              type="matrix"
+              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              result="hardAlpha" />
+            <feOffset />
+            <feGaussianBlur stdDeviation="0.5" />
+            <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+            <feColorMatrix type="matrix" values="0 0 0 0 0.0980392 0 0 0 0 0.101961 0 0 0 0 0.2 0 0 0 0.819684 0" />
+            <feBlend mode="normal" in2="shape" result="effect1_innerShadow_106_97" />
+          </filter>
+          <filter
+            id="filter4_d_106_97"
+            x="2.85231"
+            y="2.23999"
+            width="21.9015"
+            height="7.87079"
+            filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feColorMatrix
+              in="SourceAlpha"
+              type="matrix"
+              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              result="hardAlpha" />
+            <feOffset dy="1" />
+            <feGaussianBlur stdDeviation="1.5" />
+            <feColorMatrix
+              type="matrix"
+              values="0 0 0 0 0.803922 0 0 0 0 0.388235 0 0 0 0 0.00392157 0 0 0 0.145679 0" />
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_106_97" />
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_106_97" result="shape" />
+          </filter>
+          <linearGradient
+            id="paint0_linear_106_97"
+            x1="58"
+            y1="0.966125"
+            x2="58"
+            y2="19.5075"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E04300" />
+            <stop offset="1" stop-color="#FFA320" />
+          </linearGradient>
+          <linearGradient
+            id="paint1_linear_106_97"
+            x1="57.9997"
+            y1="22.8598"
+            x2="57.9997"
+            y2="25.2863"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#3D0D00" />
+            <stop offset="1" stop-color="#661C04" />
+          </linearGradient>
+          <linearGradient
+            id="paint2_linear_106_97"
+            x1="57.7668"
+            y1="15.4639"
+            x2="57.7668"
+            y2="20.1408"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#191A33" />
+            <stop offset="0.872" stop-color="#3B426A" />
+          </linearGradient>
+          <linearGradient
+            id="paint3_linear_106_97"
+            x1="63.9153"
+            y1="17.2166"
+            x2="63.9153"
+            y2="13.1262"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#9A2F00" />
+            <stop offset="1" stop-color="#D44800" />
+          </linearGradient>
+          <linearGradient
+            id="paint4_linear_106_97"
+            x1="13.8031"
+            y1="3.79449"
+            x2="13.8031"
+            y2="28.56"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#FEEA70" />
+            <stop offset="1" stop-color="#F69B30" />
+          </linearGradient>
+          <linearGradient
+            id="paint5_linear_106_97"
+            x1="13.8029"
+            y1="14.9969"
+            x2="13.8029"
+            y2="25.2862"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#472315" />
+            <stop offset="1" stop-color="#8B3A0E" />
+          </linearGradient>
+          <linearGradient
+            id="paint6_linear_106_97"
+            x1="13.5692"
+            y1="7.98157"
+            x2="13.5692"
+            y2="13.1262"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#191A33" />
+            <stop offset="0.872" stop-color="#3B426A" />
+          </linearGradient>
+          <linearGradient
+            id="paint7_linear_106_97"
+            x1="13.8027"
+            y1="4.23924"
+            x2="13.8027"
+            y2="6.11115"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E78E0D" />
+            <stop offset="1" stop-color="#CB6000" />
+          </linearGradient>
+          <linearGradient
+            id="paint8_linear_106_97"
+            x1="101.963"
+            y1="0.966125"
+            x2="101.963"
+            y2="28.56"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#FF6680" />
+            <stop offset="1" stop-color="#E61739" />
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+
+    <div class="absolute bottom-48 left-24 flex items-center space-x-20">
+      <div
+        class="relative flex h-10 w-10 shrink-0 origin-right animate-scale-2 select-none items-center justify-center rounded bg-slate-100 text-sm font-bold uppercase text-slate-800">
+        <img
+          class="h-full w-full rounded bg-slate-900 object-cover object-center"
+          src="https://source.boringavatars.com/beam/4?square&colors=1E293B" />
+        <span aria-hidden="true" class="absolute bottom-0 right-0 h-2 w-2 rounded bg-green-500 ring ring-white"></span>
+      </div>
+
+      <div class="flex origin-right animate-scale-1 flex-col space-y-2">
+        <button
+          type="button"
+          role="switch"
+          aria-checked="false"
+          class="relative inline-flex h-7 w-12 shrink-0 cursor-pointer appearance-none rounded-full border-2 border-transparent bg-slate-200 transition focus:outline-none focus:ring focus:ring-blue-200">
+          <span
+            aria-hidden="true"
+            class="pointer-events-none inline-block h-6 w-6 translate-x-0 rounded-full bg-white transition will-change-transform"></span>
+        </button>
+
+        <button
+          type="button"
+          role="switch"
+          aria-checked="true"
+          class="relative inline-flex h-7 w-12 shrink-0 cursor-pointer appearance-none rounded-full border-2 border-transparent bg-slate-800 transition focus:outline-none focus:ring focus:ring-blue-200">
+          <span
+            aria-hidden="true"
+            class="pointer-events-none inline-block h-6 w-6 translate-x-5 rounded-full bg-white transition will-change-transform"></span>
+        </button>
+      </div>
+
+      <a
+        href="https://github.com/praveenjuge/copybook"
+        target="_blank"
+        rel="noopener noreferrer"
+        role="tooltip"
+        class="relative max-w-xs origin-right animate-scale-0.5 break-words rounded bg-slate-800 px-3 py-2 text-center text-xs font-medium text-slate-200 shadow-lg outline-none">
+        <!-- Position arrow using popper -->
+        <svg
+          class="absolute fill-slate-800"
+          width="10"
+          height="5"
+          viewBox="0 0 30 10"
+          style="transform: translate3d(30px, -13px, 0px)"
+          preserveAspectRatio="none">
+          <polygon points="15,0 30,10 0,10"></polygon>
+        </svg>
+        <span>Leave a star &nbsp; ⭐</span>
+      </a>
+    </div>
+
+    <div class="absolute bottom-24 left-6 flex items-center space-x-10">
+      <span
+        class="flex shrink-0 origin-right animate-scale-2 space-x-1 rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-extrabold uppercase tracking-wider text-slate-800">
+        <svg
+          class="h-4 w-4"
+          xmlns="http://www.w3.org/2000/svg"
+          width="192"
+          height="192"
+          fill="currentColor"
+          viewBox="0 0 256 256">
+          <path
+            d="M208.9,144a15.8,15.8,0,0,1-10.5,15l-52.2,19.2L127,230.4a16,16,0,0,1-30,0L77.8,178.2,25.6,159a16,16,0,0,1,0-30l52.2-19.2L97,57.6a16,16,0,0,1,30,0l19.2,52.2L198.4,129A15.8,15.8,0,0,1,208.9,144ZM152,48h16V64a8,8,0,0,0,16,0V48h16a8,8,0,0,0,0-16H184V16a8,8,0,0,0-16,0V32H152a8,8,0,0,0,0,16Zm88,32h-8V72a8,8,0,0,0-16,0v8h-8a8,8,0,0,0,0,16h8v8a8,8,0,0,0,16,0V96h8a8,8,0,0,0,0-16Z"></path>
+        </svg>
+        <span>NEW</span>
+      </span>
+
+      <div class="flex origin-right animate-scale-1 flex-col items-center space-y-4">
+        <span
+          class="flex items-center space-x-1.5 rounded-full border border-slate-200 bg-white px-3 py-1 text-sm font-medium text-slate-800">
+          <span class="-ml-0.5 h-1.5 w-1.5 shrink-0 rounded-full bg-red-600"></span>
+          <span>Badge</span>
+        </span>
+        <div class="flex space-x-1">
+          <span class="h-2 w-2 shrink-0 rounded-full bg-slate-500"></span>
+          <span class="h-2 w-2 shrink-0 rounded-full bg-emerald-500"></span>
+          <span class="h-2 w-2 shrink-0 rounded-full bg-red-500"></span>
+          <span class="relative flex h-2 w-2">
+            <span class="absolute h-full w-full shrink-0 animate-ping rounded-full bg-blue-500"></span>
+            <span class="h-full w-full shrink-0 rounded-full bg-blue-500"></span>
+          </span>
+          <span class="h-2 w-2 shrink-0 rounded-full bg-yellow-500"></span>
+        </div>
+      </div>
+
+      <button
+        type="button"
+        class="inline-flex w-auto origin-right animate-scale-1 cursor-pointer select-none appearance-none items-center justify-center space-x-2 rounded border border-slate-200 bg-white px-5 py-4 text-lg font-medium text-slate-700 transition hover:border-slate-300 hover:bg-slate-100 focus:border-slate-300 focus:outline-none focus:ring-2 focus:ring-slate-300">
+        <svg
+          class="h-5 w-5"
+          xmlns="http://www.w3.org/2000/svg"
+          width="192"
+          height="192"
+          fill="currentColor"
+          viewBox="0 0 256 256">
+          <path
+            d="M236.4,73.3,213.2,57.9A60,60,0,0,0,96,76V93.2L1.8,211A8,8,0,0,0,8,224H112A104.2,104.2,0,0,0,216,120V100.3l20.4-13.6a8,8,0,0,0,0-13.4ZM110.1,141.1l-40,48a8,8,0,0,1-12.2-10.2l40-48a8,8,0,1,1,12.2,10.2ZM164,80a12,12,0,1,1,12-12A12,12,0,0,1,164,80Z"></path>
+        </svg>
+
+        <span>Button</span>
+      </button>
+
+      <div class="inline-flex origin-right animate-scale-0.5 items-center space-x-2">
+        <input
+          id="basic"
+          type="checkbox"
+          class="cursor-pointer rounded border-slate-300 text-slate-600 transition focus:ring-slate-600 disabled:cursor-not-allowed disabled:bg-slate-200 disabled:opacity-75"
+          checked />
+        <label for="basic" class="cursor-pointer truncate text-sm font-medium text-slate-500"> Are you ready? </label>
+      </div>
+    </div>
+
+    <div
+      class="absolute bottom-4 left-6 flex origin-right animate-scale-1 items-center space-x-6 rounded border border-slate-200 bg-white py-3 px-4">
+      <div class="relative z-0 flex -space-x-px">
+        <button
+          type="button"
+          class="inline-flex w-auto cursor-pointer select-none appearance-none items-center justify-center rounded-l border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-800 transition hover:border-slate-300 hover:bg-slate-100 focus:z-10 focus:border-slate-300 focus:outline-none focus:ring-2 focus:ring-slate-300">
+          <svg
+            class="h-4 w-4 shrink-0"
+            xmlns="http://www.w3.org/2000/svg"
+            width="192"
+            height="192"
+            fill="currentColor"
+            viewBox="0 0 256 256">
+            <path
+              d="M64,120h88a40,40,0,0,1,0,80H64V48h76a36,36,0,0,1,0,72"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="24"></path>
+          </svg>
+        </button>
+        <button
+          type="button"
+          class="inline-flex w-auto cursor-pointer select-none appearance-none items-center justify-center border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-800 transition hover:border-slate-300 hover:bg-slate-100 focus:z-10 focus:border-slate-300 focus:outline-none focus:ring-2 focus:ring-slate-300">
+          <svg
+            class="h-4 w-4 shrink-0"
+            xmlns="http://www.w3.org/2000/svg"
+            width="192"
+            height="192"
+            fill="currentColor"
+            viewBox="0 0 256 256">
+            <line
+              x1="152"
+              y1="56"
+              x2="104"
+              y2="200"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="24"></line>
+            <line
+              x1="64"
+              y1="200"
+              x2="144"
+              y2="200"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="24"></line>
+            <line
+              x1="112"
+              y1="56"
+              x2="192"
+              y2="56"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="24"></line>
+          </svg>
+        </button>
+        <button
+          type="button"
+          class="inline-flex w-auto cursor-pointer select-none appearance-none items-center justify-center rounded-r border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-800 transition hover:border-slate-300 hover:bg-slate-100 focus:z-10 focus:border-slate-300 focus:outline-none focus:ring-2 focus:ring-slate-300">
+          <svg
+            class="h-4 w-4 shrink-0"
+            xmlns="http://www.w3.org/2000/svg"
+            width="192"
+            height="192"
+            fill="currentColor"
+            viewBox="0 0 256 256">
+            <line
+              x1="40"
+              y1="216"
+              x2="216"
+              y2="216"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="24"></line>
+            <path
+              d="M64,56v60a64,64,0,0,0,128,0V56"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="24"></path>
+          </svg>
+        </button>
+      </div>
+
+      <div class="relative z-0 flex -space-x-px">
+        <button
+          type="button"
+          class="inline-flex w-auto cursor-pointer select-none appearance-none items-center justify-center rounded-l border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-800 transition hover:border-slate-300 hover:bg-slate-100 focus:z-10 focus:border-slate-300 focus:outline-none focus:ring-2 focus:ring-slate-300">
+          <svg class="h-4 w-4 shrink-0" viewBox="0 0 256 256">
+            <line
+              x1="40"
+              y1="68"
+              x2="216"
+              y2="68"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="24"></line>
+            <line
+              x1="40"
+              y1="108"
+              x2="168"
+              y2="108"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="24"></line>
+            <line
+              x1="40"
+              y1="148"
+              x2="216"
+              y2="148"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="24"></line>
+            <line
+              x1="40"
+              y1="188"
+              x2="168"
+              y2="188"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="24"></line>
+          </svg>
+        </button>
+        <button
+          type="button"
+          class="inline-flex w-auto cursor-pointer select-none appearance-none items-center justify-center border border-slate-200 bg-slate-100 px-3 py-2 text-sm font-medium text-slate-800 transition hover:border-slate-300 hover:bg-slate-100 focus:z-10 focus:border-slate-300 focus:outline-none focus:ring-2 focus:ring-slate-300">
+          <svg class="h-4 w-4 shrink-0" viewBox="0 0 256 256">
+            <line
+              x1="40"
+              y1="68"
+              x2="216"
+              y2="68"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="24"></line>
+            <line
+              x1="64"
+              y1="108"
+              x2="192"
+              y2="108"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="24"></line>
+            <line
+              x1="40"
+              y1="148"
+              x2="216"
+              y2="148"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="24"></line>
+            <line
+              x1="64"
+              y1="188"
+              x2="192"
+              y2="188"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="24"></line>
+          </svg>
+        </button>
+        <button
+          type="button"
+          class="inline-flex w-auto cursor-pointer select-none appearance-none items-center justify-center rounded-r border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-800 transition hover:border-slate-300 hover:bg-slate-100 focus:z-10 focus:border-slate-300 focus:outline-none focus:ring-2 focus:ring-slate-300">
+          <svg class="h-4 w-4 shrink-0" viewBox="0 0 256 256">
+            <line
+              x1="40"
+              y1="68"
+              x2="216"
+              y2="68"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="24"></line>
+            <line
+              x1="88"
+              y1="108"
+              x2="216"
+              y2="108"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="24"></line>
+            <line
+              x1="40"
+              y1="148"
+              x2="216"
+              y2="148"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="24"></line>
+            <line
+              x1="88"
+              y1="188"
+              x2="216"
+              y2="188"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="24"></line>
+          </svg>
+        </button>
+      </div>
+
+      <p class="text-sm text-slate-500">Edited 2 hours ago</p>
+    </div>
+
+    <!-- Loader -->
+    <div class="absolute right-60 top-2 flex origin-left animate-scale-1">
+      <svg class="h-10 w-10 stroke-slate-400" viewBox="0 0 256 256">
+        <line x1="128" y1="32" x2="128" y2="64" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></line>
+        <line
+          x1="195.9"
+          y1="60.1"
+          x2="173.3"
+          y2="82.7"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="24"></line>
+        <line
+          x1="224"
+          y1="128"
+          x2="192"
+          y2="128"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="24"></line>
+        <line
+          x1="195.9"
+          y1="195.9"
+          x2="173.3"
+          y2="173.3"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="24"></line>
+        <line
+          x1="128"
+          y1="224"
+          x2="128"
+          y2="192"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="24"></line>
+        <line
+          x1="60.1"
+          y1="195.9"
+          x2="82.7"
+          y2="173.3"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="24"></line>
+        <line x1="32" y1="128" x2="64" y2="128" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></line>
+        <line
+          x1="60.1"
+          y1="60.1"
+          x2="82.7"
+          y2="82.7"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="24"></line>
+      </svg>
+    </div>
+
+    <!-- Stars -->
+    <div class="absolute right-16 top-4 flex origin-left animate-scale-2">
+      <svg class="h-7 w-7 shrink-0 fill-amber-400" aria-hidden="true" viewBox="0 0 256 256">
+        <path
+          d="M239.2,97.4A16.4,16.4,0,0,0,224.6,86l-59.4-4.1-22-55.5A16.4,16.4,0,0,0,128,16h0a16.4,16.4,0,0,0-15.2,10.4L90.4,82.2,31.4,86A16.5,16.5,0,0,0,16.8,97.4,16.8,16.8,0,0,0,22,115.5l45.4,38.4L53.9,207a18.5,18.5,0,0,0,7,19.6,18,18,0,0,0,20.1.6l46.9-29.7h.2l50.5,31.9a16.1,16.1,0,0,0,8.7,2.6,16.5,16.5,0,0,0,15.8-20.8l-14.3-58.1L234,115.5A16.8,16.8,0,0,0,239.2,97.4Z"></path>
+      </svg>
+      <svg class="h-7 w-7 shrink-0 fill-amber-400" aria-hidden="true" viewBox="0 0 256 256">
+        <path
+          d="M239.2,97.4A16.4,16.4,0,0,0,224.6,86l-59.4-4.1-22-55.5A16.4,16.4,0,0,0,128,16h0a16.4,16.4,0,0,0-15.2,10.4L90.4,82.2,31.4,86A16.5,16.5,0,0,0,16.8,97.4,16.8,16.8,0,0,0,22,115.5l45.4,38.4L53.9,207a18.5,18.5,0,0,0,7,19.6,18,18,0,0,0,20.1.6l46.9-29.7h.2l50.5,31.9a16.1,16.1,0,0,0,8.7,2.6,16.5,16.5,0,0,0,15.8-20.8l-14.3-58.1L234,115.5A16.8,16.8,0,0,0,239.2,97.4Z"></path>
+      </svg>
+      <svg class="h-7 w-7 shrink-0 fill-amber-400" aria-hidden="true" viewBox="0 0 256 256">
+        <path
+          d="M239.2,97.4A16.4,16.4,0,0,0,224.6,86l-59.4-4.1-22-55.5A16.4,16.4,0,0,0,128,16h0a16.4,16.4,0,0,0-15.2,10.4L90.4,82.2,31.4,86A16.5,16.5,0,0,0,16.8,97.4,16.8,16.8,0,0,0,22,115.5l45.4,38.4L53.9,207a18.5,18.5,0,0,0,7,19.6,18,18,0,0,0,20.1.6l46.9-29.7h.2l50.5,31.9a16.1,16.1,0,0,0,8.7,2.6,16.5,16.5,0,0,0,15.8-20.8l-14.3-58.1L234,115.5A16.8,16.8,0,0,0,239.2,97.4Z"></path>
+      </svg>
+      <svg class="h-7 w-7 shrink-0 fill-amber-400" aria-hidden="true" viewBox="0 0 256 256">
+        <path
+          d="M239.2,97.4A16.4,16.4,0,0,0,224.6,86l-59.4-4.1-22-55.5A16.4,16.4,0,0,0,128,16h0a16.4,16.4,0,0,0-15.2,10.4L90.4,82.2,31.4,86A16.5,16.5,0,0,0,16.8,97.4,16.8,16.8,0,0,0,22,115.5l45.4,38.4L53.9,207a18.5,18.5,0,0,0,7,19.6,18,18,0,0,0,20.1.6l46.9-29.7h.2l50.5,31.9a16.1,16.1,0,0,0,8.7,2.6,16.5,16.5,0,0,0,15.8-20.8l-14.3-58.1L234,115.5A16.8,16.8,0,0,0,239.2,97.4Z"></path>
+      </svg>
+      <svg class="h-7 w-7 shrink-0 fill-amber-400" aria-hidden="true" viewBox="0 0 256 256">
+        <path
+          d="M239.2,97.4A16.4,16.4,0,0,0,224.6,86l-59.4-4.1-22-55.5A16.4,16.4,0,0,0,128,16h0a16.4,16.4,0,0,0-15.2,10.4L90.4,82.2,31.4,86A16.5,16.5,0,0,0,16.8,97.4,16.8,16.8,0,0,0,22,115.5l45.4,38.4L53.9,207a18.5,18.5,0,0,0,7,19.6,18,18,0,0,0,20.1.6l46.9-29.7h.2l50.5,31.9a16.1,16.1,0,0,0,8.7,2.6,16.5,16.5,0,0,0,15.8-20.8l-14.3-58.1L234,115.5A16.8,16.8,0,0,0,239.2,97.4Z"></path>
+      </svg>
+    </div>
+
+    <!-- Reports -->
+    <div
+      class="absolute -right-6 top-20 origin-left animate-scale-1 space-y-2 rounded border border-slate-200 bg-white p-4 text-slate-500">
+      <p class="text-slate-400">Reports</p>
+      <div class="flex items-center space-x-1.5">
+        <svg
+          class="h-5 w-5"
+          xmlns="http://www.w3.org/2000/svg"
+          width="192"
+          height="192"
+          fill="currentColor"
+          viewBox="0 0 256 256">
+          <path
+            d="M24,184V161.1C24,103.6,70.2,56.2,127.6,56A104,104,0,0,1,232,160v24a8,8,0,0,1-8,8H32A8,8,0,0,1,24,184Z"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="16"></path>
+          <line
+            x1="128"
+            y1="56"
+            x2="128"
+            y2="88"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="16"></line>
+          <line
+            x1="27.5"
+            y1="133.1"
+            x2="58.5"
+            y2="141.4"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="16"></line>
+          <line
+            x1="228.5"
+            y1="133.1"
+            x2="197.5"
+            y2="141.4"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="16"></line>
+          <line
+            x1="103.4"
+            y1="192"
+            x2="171.8"
+            y2="102.9"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="16"></line>
+        </svg>
+        <p>Engagement</p>
+      </div>
+      <div class="flex items-center space-x-1.5">
+        <svg
+          class="h-5 w-5"
+          xmlns="http://www.w3.org/2000/svg"
+          width="192"
+          height="192"
+          fill="currentColor"
+          viewBox="0 0 256 256">
+          <path
+            d="M152,200c-13.3,0-24-11.1-24-24.9s10.7-24.9,24-24.9a21.6,21.6,0,0,1,8.8,1.8h0A40,40,0,1,1,200,200Z"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="16"></path>
+          <path
+            d="M16,176V160A96,96,0,0,1,178.9,91.2"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="16"></path>
+          <path
+            d="M48,176V160a64,64,0,0,1,101.9-51.6"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="16"></path>
+          <path
+            d="M80,176V160a32,32,0,0,1,32-32,30,30,0,0,1,7.4.9"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="16"></path>
+        </svg>
+        <p>Diversity and Inclusion</p>
+      </div>
+      <div class="flex items-center space-x-1.5">
+        <svg
+          class="h-5 w-5"
+          xmlns="http://www.w3.org/2000/svg"
+          width="192"
+          height="192"
+          fill="currentColor"
+          viewBox="0 0 256 256">
+          <polyline
+            points="32 128 72 128 88 104 120 152 136 128 160 128"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="16"></polyline>
+          <path
+            d="M28.1,96c-.1-1.3-.1-2.7-.1-4A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92c0,68-100,124-100,124s-39.9-22.4-69.3-56"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="16"></path>
+        </svg>
+        <p>Health and Wellbeing</p>
+      </div>
+      <div class="flex items-center space-x-1.5">
+        <svg
+          class="h-5 w-5"
+          xmlns="http://www.w3.org/2000/svg"
+          width="192"
+          height="192"
+          fill="currentColor"
+          viewBox="0 0 256 256">
+          <circle
+            cx="128"
+            cy="128"
+            r="96"
+            fill="none"
+            stroke="currentColor"
+            stroke-miterlimit="10"
+            stroke-width="16"></circle>
+          <circle cx="92" cy="108" r="12"></circle>
+          <circle cx="164" cy="108" r="12"></circle>
+          <circle cx="92" cy="108" r="12"></circle>
+          <circle cx="164" cy="108" r="12"></circle>
+          <path
+            d="M169.6,176a48.1,48.1,0,0,0-83.2,0"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="16"></path>
+        </svg>
+        <p>Negative Experiences</p>
+      </div>
+      <div class="flex items-center space-x-1.5">
+        <svg
+          class="h-5 w-5"
+          xmlns="http://www.w3.org/2000/svg"
+          width="192"
+          height="192"
+          fill="currentColor"
+          viewBox="0 0 256 256">
+          <polyline
+            points="152 232 128 208 152 184"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="16"></polyline>
+          <polyline
+            points="194.6 75.2 185.8 108 153.1 99.2"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="16"></polyline>
+          <polyline
+            points="79 140.8 70.2 108 37.4 116.8"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="16"></polyline>
+          <path
+            d="M128,208h88a16,16,0,0,0,13.8-24l-23.9-41.4"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="16"></path>
+          <path
+            d="M70.2,108l-44,76A16,16,0,0,0,40,208H88"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="16"></path>
+          <path
+            d="M185.8,108l-44-76a15.9,15.9,0,0,0-27.6,0l-24,41.4"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="16"></path>
+        </svg>
+        <p>Experience Cycle</p>
+      </div>
+    </div>
+
+    <!-- Input Tag -->
+    <div class="absolute -right-4 bottom-36 w-64 origin-left animate-scale-2 space-y-0.5">
+      <label for="basic" class="text-sm font-medium text-slate-500">Input Tag</label>
+      <input
+        id="basic"
+        type="text"
+        placeholder="harry@potter.com"
+        class="block w-full rounded-md border-slate-200 text-sm transition placeholder:text-slate-400 focus:border-blue-600 focus:ring-blue-600 disabled:cursor-not-allowed disabled:bg-slate-200 disabled:opacity-75" />
+    </div>
+
+    <!-- Alert -->
+    <div
+      class="absolute -right-20 bottom-5 flex w-[36rem] origin-left animate-scale-1 space-x-4 rounded border border-slate-200 bg-white p-4 text-slate-800">
+      <svg
+        class="flex h-5 w-5 shrink-0"
+        xmlns="http://www.w3.org/2000/svg"
+        width="192"
+        height="192"
+        fill="currentColor"
+        viewBox="0 0 256 256">
+        <path
+          d="M128,24A104,104,0,1,0,232,128,104.2,104.2,0,0,0,128,24Zm-2,48a12,12,0,1,1-12,12A12,12,0,0,1,126,72Zm10,112h-8a8,8,0,0,1-8-8V128a8,8,0,0,1,0-16h8a8,8,0,0,1,8,8v48a8,8,0,0,1,0,16Z"></path>
+      </svg>
+      <div class="-mt-0.5">
+        <p>Hey! Just a friendly reminder that you will be billed for this.</p>
+        <p class="font-normal text-slate-500">
+          For every new member you will be charged $5. It will be automatically added in the next billing cycle.
+        </p>
+      </div>
+    </div>
+
+    <!-- Badges X -->
+    <div class="absolute right-80 top-4 flex origin-left animate-scale-0.5 space-x-2">
+      <span
+        class="flex items-center rounded-full border border-slate-200 bg-white px-3 py-1 text-sm font-medium text-slate-800">
+        <span>Design</span>
+        <button type="button" class="group ml-1 -mr-0.5 shrink-0 rounded-full">
+          <svg class="h-3 w-3 stroke-slate-600 group-hover:stroke-black" viewBox="0 0 256 256">
+            <line
+              x1="200"
+              y1="56"
+              x2="56"
+              y2="200"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="26"></line>
+            <line
+              x1="200"
+              y1="200"
+              x2="56"
+              y2="56"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="26"></line>
+          </svg>
+        </button>
+      </span>
+      <span
+        class="flex items-center rounded-full border border-slate-200 bg-slate-100 px-3 py-1 text-sm font-medium text-slate-800">
+        <span>Badge</span>
+        <button type="button" class="group ml-1 -mr-0.5 shrink-0 rounded-full">
+          <svg class="h-3 w-3 stroke-slate-600 group-hover:stroke-black" viewBox="0 0 256 256">
+            <line
+              x1="200"
+              y1="56"
+              x2="56"
+              y2="200"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="26"></line>
+            <line
+              x1="200"
+              y1="200"
+              x2="56"
+              y2="56"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="26"></line>
+          </svg>
+        </button>
+      </span>
+    </div>
+
+    <!-- Logo -->
+    <div class="absolute right-64 top-24 flex origin-left animate-scale-0.5 space-x-2">
+      <svg class="h-7" viewBox="0 0 111 21">
+        <path
+          class="fill-rose-600"
+          d="M9.45569.11334C9.33771.0392836 9.20123 0 9.06194 0c-.1393 0-.27577.0392836-.39375.11334-.94292.60914-1.81132 1.32652-2.5875 2.1375-1.725 1.79062-2.64375 3.74062-2.64375 5.625 0 1.49184.59263 2.92256 1.64752 3.97746 1.05489 1.0549 3.97748 1.6475 3.97748 1.6475s2.92256-.5926 3.97746-1.6475c1.0549-1.0549 1.6475-2.48562 1.6475-3.97746 0-4.49063-5.01559-7.63125-5.23121-7.7625ZM9.06194 12.0008c-.29582.0013-.58896-.0561-.86251-.1687-.27354-.1126-.52207-.2783-.73125-.4875-.20918-.2092-.37486-.4577-.4875-.7313-.11263-.2735-.16998-.5666-.16874-.86246 0-2.25 2.25-3.75 2.25-3.75s2.24996 1.5 2.24996 3.75c.0013.29586-.0561.58896-.1687.86246-.1126.2736-.2783.5221-.4875.7313-.2092.2092-.4577.3749-.73126.4875-.27354.1126-.56668.17-.8625.1687Zm8.96246 6.975c-.0477.1518-.1424.2845-.2705.3788-.1281.0944-.2829.1456-.442.1462-.0766.0014-.1529-.0113-.225-.0375l-8.02496-2.55-8.025 2.55c-.072085.0262-.148343.0389-.225003.0375-.159092-.0006-.313864-.0518-.441943-.1462-.128079-.0943-.22283-.227-.2705568-.3788-.0304549-.0935-.0419719-.1922-.0338781-.2902.0080939-.098.0356359-.1935.0810189-.2807.045383-.0873.107697-.1647.183304-.2276.075607-.0629.162993-.1102.257055-.139l6.000003-1.9125-6.000003-1.9125c-.101479-.0226-.197151-.066-.280941-.1276-.08379-.0615-.153868-.1398-.205786-.2299-.0519183-.0901-.0845418-.19-.09579985-.2933-.01125803-.1034-.00090453-.2079.03040305-.3071.0313075-.0991.0828848-.1907.1514588-.2688.068574-.0781.152646-.1412.246879-.1851.094233-.0439.196569-.0678.30051-.07.103942-.0023.20722.0171.303279.0568l8.025 2.55 8.02496-2.55c.0961-.0397.1994-.0591.3033-.0568.104.0022.2063.0261.3005.07.0943.0439.1783.107.2469.1851.0686.0781.1202.1697.1515.2688.0313.0992.0416.2037.0304.3071-.0113.1033-.0439.2032-.0958.2933-.052.0901-.122.1684-.2058.2299-.0838.0616-.1795.105-.281.1276l-6 1.9125 6 1.9125c.0941.0288.1815.0761.2571.139.0756.0629.1379.1403.1833.2276.0454.0872.0729.1827.081.2807.0081.098-.0034.1967-.0339.2902Z" />
+        <path
+          class="fill-slate-900"
+          d="M30.3039 17.24c-.9467 0-1.8-.1467-2.56-.44-.76-.3067-1.4067-.7533-1.94-1.34-.5334-.6-.9467-1.34-1.24-2.22-.2934-.8933-.44-1.9333-.44-3.12 0-1.17334.1466-2.21334.44-3.12.2933-.92.7066-1.68667 1.24-2.3.5333-.62667 1.18-1.1 1.94-1.42.76-.32 1.6133-.48 2.56-.48 1.2933 0 2.36.26666 3.2.8.84.52 1.5133 1.34666 2.02 2.48l-2.62 1.36c-.1867-.58667-.48-1.05334-.88-1.4-.3867-.36-.96-.54-1.72-.54-.8934 0-1.6134.29333-2.16.88-.5334.57333-.8 1.41333-.8 2.52v2.24c0 1.1067.2666 1.9533.8 2.54.5466.5733 1.2666.86 2.16.86.7466 0 1.34-.2 1.78-.6.4533-.4133.7866-.9067 1-1.48l2.48 1.44c-.52 1.0667-1.2067 1.8933-2.06 2.48-.84.5733-1.9067.86-3.2.86ZM43.3712 15.24c-.08.28-.3067.5467-.48.8-.1733.24-.3867.4533-.64.64-.24.1733-.52.3067-.84.4-.3067.1067-.6267.16-.96.16-1.3333 0-2.34-.4667-3.02-1.4-.68-.9467-1.02-2.3133-1.02-4.1 0-1.78667.34-3.14667 1.02-4.08.68-.93334 1.6867-1.4 3.02-1.4.68 0 1.28.18666 1.8.56.5333.37333.9733.85333 1.12 1.44V6.5h2.96V17h-2.96v-1.76Zm-1.94-.4c.56 0 1.02-.1333 1.38-.4.3733-.28.56-.66.56-1.14v-3.1c0-.48-.1867-.85334-.56-1.12-.36-.28-.82-.42-1.38-.42-.56 0-1.0267.2-1.4.6-.36.38666-.54.9133-.54 1.58v1.82c0 .6667.18 1.2.54 1.6.3733.3867.84.58 1.4.58ZM48.4992 17V6.5h2.96v1.78c.1866-.56.6266-1.03334 1.08-1.42.4533-.4 1.0733-.6 1.86-.6.72 0 1.3333.18 1.84.54.5066.36.8733.88666 1.1 1.58.0933-.29334.2933-.56667.48-.82.2-.26667.44-.49334.72-.68.28-.18667.5933-.33334.94-.44.3467-.12.72-.18 1.12-.18 1.0133 0 1.7866.36 2.32 1.08.5466.72.82 1.74666.82 3.08V17h-2.96v-6.34c0-1.33334-.48-2-1.44-2-.44 0-.84.12666-1.2.38-.36.25333-.54.64-.54 1.16V17h-2.96v-6.34c0-1.33334-.48-2-1.44-2-.2134 0-.4267.03333-.64.1-.2.05333-.3867.14666-.56.28-.16.13333-.2934.3-.4.5-.0934.18666-.14.40666-.14.66V17h-2.96ZM65.7703 6.5h2.96v1.76c.1466-.58667.58-1.06667 1.1-1.44.5333-.37334 1.14-.56 1.82-.56 1.3333 0 2.34.46666 3.02 1.4.68.93333 1.02 2.29333 1.02 4.08 0 1.7867-.34 3.1533-1.02 4.1-.68.9333-1.6867 1.4-3.02 1.4-.3467 0-.6734-.0533-.98-.16-.3067-.0933-.5867-.2267-.84-.4-.24-.1867-.4467-.4-.62-.64-.1734-.2533-.4-.52-.48-.8V21h-2.96V6.5Zm4.9 8.34c.56 0 1.02-.1933 1.38-.58.3733-.4.56-.9333.56-1.6v-1.82c0-.6667-.1867-1.19334-.56-1.58-.36-.4-.82-.6-1.38-.6-.56 0-1.0267.14-1.4.42-.36.26666-.54.64-.54 1.12v3.1c0 .48.18.86.54 1.14.3733.2667.84.4 1.4.4ZM77.4982 17V3.04h9.26v2.7h-6.22V8.6h5.3v2.68h-5.3V17h-3.04ZM89.9175 5.38c-.6 0-1.04-.13334-1.32-.4-.2667-.28-.4-.63334-.4-1.06v-.44c0-.42667.1333-.77334.4-1.04.28-.28.72-.42 1.32-.42.6 0 1.0333.14 1.3.42.28.26666.42.61333.42 1.04v.44c0 .42666-.14.78-.42 1.06-.2667.26666-.7.4-1.3.4Zm-1.48 1.12h2.96V17h-2.96V6.5ZM93.5601 17V6.5h2.96v2.28c.0534-.29334.2467-.57334.38-.84.1334-.28.3067-.52667.52-.74.2267-.21334.4934-.38.8-.5.3067-.13334.6667-.2 1.08-.2h.52v2.76h-.74c-.8666 0-1.5133.11333-1.94.34-.4133.22666-.62.6467-.62 1.26V17h-2.96ZM105.328 17.24c-.8 0-1.513-.1267-2.14-.38-.626-.2667-1.16-.6333-1.6-1.1-.426-.48-.753-1.06-.98-1.74-.213-.68-.32-1.44-.32-2.28 0-.8267.107-1.5733.32-2.24.214-.68.527-1.26.94-1.74.427-.48.947-.84667 1.56-1.1.614-.26667 1.314-.4 2.1-.4.867 0 1.607.14666 2.22.44.627.29333 1.134.68666 1.52 1.18.4.49333.687 1.06666.86 1.72.187.64.28 1.3133.28 2.02v.88h-6.74v.16c0 .6933.187 1.2467.56 1.66.374.4.96.6 1.76.6.614 0 1.114-.12 1.5-.36.387-.2533.747-.5533 1.08-.9l1.48 1.84c-.466.5467-1.08.9733-1.84 1.28-.746.3067-1.6.46-2.56.46Zm-.06-8.8c-.6 0-1.073.2-1.42.6-.333.38666-.5.90666-.5 1.56v.16h3.68v-.18c0-.64-.146-1.15334-.44-1.54-.28-.4-.72-.6-1.32-.6Z" />
+      </svg>
+    </div>
+
+    <!-- Button -->
+    <div class="absolute right-56 top-[10.5rem] flex origin-left animate-scale-1 space-x-2">
+      <button
+        type="button"
+        class="inline-flex w-auto cursor-pointer select-none appearance-none items-center justify-center space-x-2 rounded border border-slate-200 bg-white px-5 py-4 text-lg font-medium text-slate-700 transition hover:border-slate-300 hover:bg-slate-100 focus:border-slate-300 focus:outline-none focus:ring-2 focus:ring-slate-300">
+        <svg
+          class="h-5 w-5"
+          xmlns="http://www.w3.org/2000/svg"
+          width="192"
+          height="192"
+          fill="currentColor"
+          viewBox="0 0 256 256">
+          <path
+            d="M110.5,51.2a15.7,15.7,0,0,0-14.7-4.3A16,16,0,0,0,84.2,57.1L30.3,205.2h0a16.1,16.1,0,0,0,15,21.4,17.1,17.1,0,0,0,5.5-.9l148.1-53.9a16,16,0,0,0,10.2-11.6,15.7,15.7,0,0,0-4.3-14.7ZM63.8,159.8,83,107l66,66L96.2,192.2ZM160,72a38.2,38.2,0,0,1,3.8-15.6C169.1,45.8,179.1,40,192,40c6.7,0,11-2.3,13.7-7.2a22.3,22.3,0,0,0,2.3-8.9,7.9,7.9,0,0,1,8-7.9,8,8,0,0,1,8,8c0,12.9-8.5,32-32,32-6.7,0-11,2.3-13.7,7.2a22.3,22.3,0,0,0-2.3,8.9,7.9,7.9,0,0,1-8,7.9A8,8,0,0,1,160,72ZM136,40V16a8,8,0,0,1,16,0V40a8,8,0,0,1-16,0Zm101.7,82.3a8.1,8.1,0,0,1,0,11.4,8.2,8.2,0,0,1-11.4,0l-16-16a8.1,8.1,0,0,1,11.4-11.4Zm4.8-42.7-24,8a7.3,7.3,0,0,1-2.5.4,8,8,0,0,1-2.5-15.6l24-8a8,8,0,0,1,5,15.2Z"></path>
+        </svg>
+        <span>Extra Large</span>
+      </button>
+    </div>
+
+    <!-- Avatars -->
+    <div class="absolute right-64 bottom-52 origin-left animate-scale-1">
+      <div class="flex -space-x-4">
+        <div
+          class="relative flex h-10 w-10 shrink-0 select-none items-center justify-center rounded-full bg-slate-100 text-sm font-bold uppercase text-slate-800 ring ring-white">
+          P
+        </div>
+        <div
+          class="relative flex h-10 w-10 shrink-0 select-none items-center justify-center rounded-full bg-slate-100 text-sm font-bold uppercase text-slate-800 ring ring-white">
+          J
+        </div>
+        <div
+          class="relative flex h-10 w-10 shrink-0 select-none items-center justify-center rounded-full bg-slate-100 text-sm font-bold uppercase text-slate-800 ring ring-white">
+          <img
+            class="h-full w-full rounded-full bg-slate-900 object-cover object-center"
+            src="https://source.boringavatars.com/beam/3?square&colors=1E293B" />
+        </div>
+        <div
+          class="relative flex h-10 w-10 shrink-0 select-none items-center justify-center rounded-full bg-slate-100 text-sm font-bold uppercase text-slate-800 ring ring-white">
+          <img
+            class="h-full w-full rounded-full bg-slate-900 object-cover object-center"
+            src="https://source.boringavatars.com/beam/4?square&colors=1E293B" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Radio -->
+    <div class="absolute right-72 bottom-[9.5rem] origin-left animate-scale-0.5">
+      <div class="flex flex-col space-y-2 md:flex-row md:space-y-0 md:space-x-6">
+        <div class="inline-flex items-center space-x-1.5">
+          <input
+            id="basic"
+            type="radio"
+            name="apples"
+            checked
+            class="cursor-pointer rounded-full border-slate-300 text-blue-600 transition focus:ring-blue-600 disabled:cursor-not-allowed disabled:bg-slate-200 disabled:opacity-75" />
+          <label for="apples" class="cursor-pointer truncate font-medium text-slate-500"> Apples </label>
+        </div>
+        <div class="inline-flex items-center space-x-1.5">
+          <input
+            id="public"
+            type="radio"
+            name="oranges"
+            class="cursor-pointer rounded-full border-slate-300 text-blue-600 transition focus:ring-blue-600 disabled:cursor-not-allowed disabled:bg-slate-200 disabled:opacity-75" />
+          <label for="oranges" class="cursor-pointer truncate font-medium text-slate-500"> Oranges </label>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="font-alegreya mx-auto max-w-[85rem] p-4">
-  <p class="mb-2 font-medium italic text-stone-600">Elements</p>
+  <p class="mb-2 font-medium italic text-slate-600">Elements</p>
   <div class="grid grid-cols-1 gap-y-px gap-x-px sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
     {{< elementlink link="/avatar">}}
     <img
-      src="https://source.boringavatars.com/beam?colors=F3BD7F"
-      class="h-8 w-8 select-none rounded-full bg-orange-100" />
+      src="https://source.boringavatars.com/beam?colors=334155"
+      class="h-8 w-8 select-none rounded-full bg-slate-700" />
     {{< /elementlink>}} {{< elementlink link="/avatar-group">}}
     <div class="flex -space-x-3">
       <img
-        src="https://source.boringavatars.com/beam/1?colors=F3BD7F"
-        class="h-8 w-8 select-none rounded-full bg-orange-100 ring-2 ring-white" />
+        src="https://source.boringavatars.com/beam/1?colors=334155"
+        class="h-8 w-8 select-none rounded-full bg-slate-700 ring-2 ring-white" />
       <img
-        src="https://source.boringavatars.com/beam/2?colors=F3BD7F"
-        class="h-8 w-8 select-none rounded-full bg-orange-100 ring-2 ring-white" />
+        src="https://source.boringavatars.com/beam/2?colors=334155"
+        class="h-8 w-8 select-none rounded-full bg-slate-700 ring-2 ring-white" />
       <img
-        src="https://source.boringavatars.com/beam/3?colors=F3BD7F"
-        class="h-8 w-8 select-none rounded-full bg-orange-100 ring-2 ring-white" />
+        src="https://source.boringavatars.com/beam/3?colors=334155"
+        class="h-8 w-8 select-none rounded-full bg-slate-700 ring-2 ring-white" />
     </div>
     {{< /elementlink>}} {{< elementlink link="/badge">}}
-    <div class="h-6 w-12 rounded-full bg-orange-100"></div>
+    <div class="h-6 w-12 rounded-full bg-slate-700"></div>
     {{< /elementlink>}} {{< elementlink link="/breadcrumb">}}
     <div class="flex items-center space-x-3">
-      <div class="h-6 w-10 rounded bg-orange-100"></div>
-      <div class="h-5 w-0.5 rotate-12 rounded-full bg-orange-300"></div>
-      <div class="h-6 w-10 rounded bg-orange-200"></div>
+      <div class="h-6 w-10 rounded bg-slate-300"></div>
+      <div class="h-5 w-0.5 rotate-12 rounded-full bg-slate-400"></div>
+      <div class="h-6 w-10 rounded bg-slate-700"></div>
     </div>
     {{< /elementlink>}} {{< elementlink link="/buttons">}}
-    <div class="h-8 w-16 rounded bg-orange-200"></div>
+    <div class="h-8 w-16 rounded bg-slate-700"></div>
     {{< /elementlink>}} {{< elementlink link="/button-group">}}
-    <div class="h-8 w-12 rounded-l bg-orange-100"></div>
-    <div class="-ml-px h-8 w-12 rounded-r bg-orange-200"></div>
+    <div class="h-8 w-12 rounded-l bg-slate-300"></div>
+    <div class="-ml-px h-8 w-12 rounded-r bg-slate-700"></div>
     {{< /elementlink>}} {{< elementlink link="/progress">}}
-    <div class="h-3.5 w-32 overflow-hidden rounded-full bg-orange-100">
-      <div class="h-3.5 w-10 bg-orange-300"></div>
+    <div class="h-3.5 w-32 overflow-hidden rounded-full bg-slate-300">
+      <div class="h-3.5 w-10 bg-slate-700"></div>
     </div>
     {{< /elementlink>}} {{< elementlink link="/spinner">}}
     <svg class="h-8 w-8" viewBox="3 3 18 18">
       <path
-        class="fill-orange-100"
+        class="fill-slate-300"
         d="M12 5C8.13401 5 5 8.13401 5 12C5 15.866 8.13401 19 12 19C15.866 19 19 15.866 19 12C19 8.13401 15.866 5 12 5ZM3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12Z"></path>
       <path
-        class="fill-orange-300"
+        class="fill-slate-700"
         d="M16.9497 7.05015C14.2161 4.31648 9.78392 4.31648 7.05025 7.05015C6.65973 7.44067 6.02656 7.44067 5.63604 7.05015C5.24551 6.65962 5.24551 6.02646 5.63604 5.63593C9.15076 2.12121 14.8492 2.12121 18.364 5.63593C18.7545 6.02646 18.7545 6.65962 18.364 7.05015C17.9734 7.44067 17.3403 7.44067 16.9497 7.05015Z"></path>
     </svg>
     {{< /elementlink>}} {{< elementlink link="/switch">}}
-    <div class="flex h-7 w-12 items-center justify-end rounded-full bg-orange-300 py-1 px-0.5">
+    <div class="flex h-7 w-12 items-center justify-end rounded-full bg-slate-700 py-1 px-0.5">
       <div class="h-6 w-6 rounded-full bg-white"></div>
     </div>
     {{< /elementlink>}} {{< elementlink link="/tooltip">}}
-    <div class="relative flex h-8 w-16 items-center rounded bg-orange-200">
+    <div class="relative flex h-8 w-16 items-center rounded bg-slate-700">
       <svg
-        class="absolute -top-0.5 left-1/2 -translate-x-1/2 -translate-y-1/2 fill-orange-200"
+        class="absolute -top-0.5 left-1/2 -translate-x-1/2 -translate-y-1/2 fill-slate-700"
         width="10"
         height="5"
         viewBox="0 0 30 10"
@@ -102,41 +1238,41 @@
     </div>
     {{< /elementlink>}}
   </div>
-  <p class="mt-10 mb-2 font-medium italic text-stone-600">Form</p>
+  <p class="mt-10 mb-2 font-medium italic text-slate-600">Form</p>
   <div class="grid grid-cols-1 gap-y-px gap-x-px sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
     {{< elementlink link="/checkbox">}}
-    <svg class="h-8 w-8 fill-orange-300" viewBox="0 0 256 256">
+    <svg class="h-8 w-8 fill-slate-700" viewBox="0 0 256 256">
       <path
         d="M208,32H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32Zm-30.5,77.8-58.6,56a8.1,8.1,0,0,1-5.6,2.2,7.9,7.9,0,0,1-5.5-2.2l-29.3-28a8,8,0,1,1,11-11.6l23.8,22.7,53.2-50.7a8,8,0,0,1,11,11.6Z"></path>
     </svg>
     {{< /elementlink>}} {{< elementlink link="/file">}}
-    <svg class="h-8 w-8 fill-orange-300" viewBox="0 0 256 256">
+    <svg class="h-8 w-8 fill-slate-700" viewBox="0 0 256 256">
       <path
         d="M213.6,82.3l-55.9-56-.3-.2-.3-.3-.3-.2-.3-.2c-.1-.1-.2-.1-.2-.2l-.5-.3h-.2l-.5-.3H155l-.7-.3H56A16,16,0,0,0,40,40V216a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V88A7.8,7.8,0,0,0,213.6,82.3Zm-51.9,71.4a8.1,8.1,0,0,1-11.4,0L136,139.3V184a8,8,0,0,1-16,0V139.3l-14.3,14.4a8.1,8.1,0,0,1-11.4-11.4l28-28h.1l.5-.5.3-.2.4-.3.3-.2.3-.2h.4l.3-.2h.4l.4-.2h4.6l.4.2h.4l.3.2h.4l.3.2.3.2.4.3.3.2.5.5h.1l28,28A8.1,8.1,0,0,1,161.7,153.7ZM152,88V43.3L196.7,88Z"></path>
     </svg>
     {{< /elementlink>}} {{< elementlink link="/input">}}
-    <div class="h-6 w-1/2 rounded bg-orange-100"></div>
+    <div class="h-6 w-1/2 rounded bg-slate-700"></div>
     {{< /elementlink>}} {{< elementlink link="/input-group">}}
     <div class="flex -space-x-px">
-      <div class="h-6 w-24 rounded-l bg-orange-100"></div>
-      <div class="h-6 w-8 rounded-r bg-orange-200"></div>
+      <div class="h-6 w-24 rounded-l bg-slate-300"></div>
+      <div class="h-6 w-8 rounded-r bg-slate-700"></div>
     </div>
     {{< /elementlink>}} {{< elementlink link="/radio">}}
-    <div class="grid h-8 w-8 place-items-center rounded-full bg-orange-300">
+    <div class="grid h-8 w-8 place-items-center rounded-full bg-slate-700">
       <div class="h-3 w-3 rounded-full bg-white"></div>
     </div>
     {{< /elementlink>}} {{< elementlink link="/range">}}
-    <div class="flex h-2 w-32 items-center justify-center rounded-full bg-orange-100">
-      <div class="h-4 w-4 rounded-full bg-orange-300"></div>
+    <div class="flex h-2 w-32 items-center justify-center rounded-full bg-slate-300">
+      <div class="h-4 w-4 rounded-full bg-slate-700"></div>
     </div>
     {{< /elementlink>}} {{< elementlink link="/rating">}}
-    <svg class="h-8 w-8 shrink-0 fill-orange-300" aria-hidden="true" viewBox="0 0 256 256">
+    <svg class="h-8 w-8 shrink-0 fill-slate-700" aria-hidden="true" viewBox="0 0 256 256">
       <path
         d="M239.2,97.4A16.4,16.4,0,0,0,224.6,86l-59.4-4.1-22-55.5A16.4,16.4,0,0,0,128,16h0a16.4,16.4,0,0,0-15.2,10.4L90.4,82.2,31.4,86A16.5,16.5,0,0,0,16.8,97.4,16.8,16.8,0,0,0,22,115.5l45.4,38.4L53.9,207a18.5,18.5,0,0,0,7,19.6,18,18,0,0,0,20.1.6l46.9-29.7h.2l50.5,31.9a16.1,16.1,0,0,0,8.7,2.6,16.5,16.5,0,0,0,15.8-20.8l-14.3-58.1L234,115.5A16.8,16.8,0,0,0,239.2,97.4Z"></path>
     </svg>
     {{< /elementlink>}} {{< elementlink link="/search">}}
-    <svg class="h-8 w-8 shrink-0 stroke-orange-300" viewBox="0 0 256 256">
-      <circle cx="116" cy="116" r="84" class="fill-orange-100"></circle>
+    <svg class="h-8 w-8 shrink-0 stroke-slate-700" viewBox="0 0 256 256">
+      <circle cx="116" cy="116" r="84" class="fill-slate-300"></circle>
       <circle
         cx="116"
         cy="116"
@@ -156,8 +1292,8 @@
         stroke-width="16"></line>
     </svg>
     {{< /elementlink>}} {{< elementlink link="/select">}}
-    <div class="grid h-6 w-1/2 place-items-end items-center rounded bg-orange-100 px-2">
-      <svg class="h-2.5 w-2.5 fill-transparent stroke-orange-500" viewBox="0 0 256 256">
+    <div class="grid h-6 w-1/2 place-items-end items-center rounded bg-slate-700 px-2">
+      <svg class="h-2.5 w-2.5 fill-transparent stroke-slate-100" viewBox="0 0 256 256">
         <polyline
           points="208 96 128 176 48 96"
           stroke-linecap="round"
@@ -166,38 +1302,38 @@
       </svg>
     </div>
     {{< /elementlink>}} {{< elementlink link="/textarea">}}
-    <div class="h-12 w-1/2 rounded bg-orange-100"></div>
+    <div class="h-12 w-1/2 rounded bg-slate-700"></div>
     {{< /elementlink>}}
   </div>
-  <p class="mt-10 mb-2 font-medium italic text-stone-600">Marketing</p>
+  <p class="mt-10 mb-2 font-medium italic text-slate-600">Marketing</p>
   <div class="grid grid-cols-1 gap-y-px gap-x-px sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
     {{< elementlink link="/header">}}
     <div class="flex w-full items-center justify-between px-4">
-      <div class="h-3 w-6 rounded bg-orange-200"></div>
+      <div class="h-3 w-6 rounded bg-slate-700"></div>
       <div class="flex space-x-1">
-        <div class="h-3 w-8 rounded bg-orange-100"></div>
-        <div class="h-3 w-8 rounded bg-orange-200"></div>
+        <div class="h-3 w-8 rounded bg-slate-200"></div>
+        <div class="h-3 w-8 rounded bg-slate-700"></div>
       </div>
     </div>
     {{< /elementlink>}} {{< elementlink link="/footer">}}
     <div class="flex space-x-2">
-      <div class="h-2.5 w-8 rounded-sm bg-orange-100"></div>
-      <div class="h-10 w-8 rounded bg-orange-100"></div>
-      <div class="h-10 w-8 rounded bg-orange-100"></div>
-      <div class="h-10 w-8 rounded bg-orange-100"></div>
-      <div class="h-10 w-8 rounded bg-orange-100"></div>
+      <div class="h-2.5 w-8 rounded-sm bg-slate-700"></div>
+      <div class="h-10 w-8 rounded bg-slate-700"></div>
+      <div class="h-10 w-8 rounded bg-slate-700"></div>
+      <div class="h-10 w-8 rounded bg-slate-700"></div>
+      <div class="h-10 w-8 rounded bg-slate-700"></div>
     </div>
     {{< /elementlink>}}
   </div>
 
-  <p class="mt-10 mb-2 font-medium italic text-stone-600">Application</p>
+  <p class="mt-10 mb-2 font-medium italic text-slate-600">Application</p>
   <div class="grid grid-cols-1 gap-y-px gap-x-px sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
     {{< elementlink link="/section-header">}}
     <div class="mx-auto flex w-5/6 items-center justify-between">
-      <div class="h-2.5 w-14 rounded bg-orange-200"></div>
+      <div class="h-2.5 w-14 rounded bg-slate-700"></div>
       <div class="flex space-x-1">
-        <div class="h-2.5 w-6 rounded bg-orange-100"></div>
-        <div class="h-2.5 w-6 rounded bg-orange-200"></div>
+        <div class="h-2.5 w-6 rounded bg-slate-200"></div>
+        <div class="h-2.5 w-6 rounded bg-slate-700"></div>
       </div>
     </div>
     {{< /elementlink>}}

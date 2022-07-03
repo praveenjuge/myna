@@ -6,3 +6,6 @@ node_modules/
 static/main.css
 .hugo_build.lock
 package-lock.json
+
+# Local Netlify folder
+.netlify
